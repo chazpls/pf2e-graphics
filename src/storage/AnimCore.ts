@@ -70,6 +70,8 @@ export let AnimCore = class AnimCore {
 
 	static init() {
 		window.pf2eGraphics.AnimCore = new AnimCore();
+		// Subscribe to the animations store so it actually updates this.animations
+		window.pf2eGraphics.AnimCore.animationsStore.subscribe(() => {});
 		Hooks.callAll('pf2eGraphicsReady');
 		window.pf2eGraphics.AnimCore.ready = true;
 	}
@@ -330,6 +332,10 @@ export let AnimCore = class AnimCore {
 		triggers: string[] = [],
 		animationData: JSONMap = this.animations,
 	): Record<string, ExecutableAnimation[]> {
+		devLog(`Search called with ${rollOptions.length} options and ${animationData.size} animation keys`);
+		devLog(`Looking for item:slug:fist in rollOptions:`, rollOptions.includes('item:slug:fist'));
+		devLog(`Animation data has item:slug:fist:`, animationData.has('item:slug:fist'));
+		
 		const unfoldedAnimationSets: [string, ReturnType<typeof unfoldAnimationSets>][] = [];
 
 		for (const [rollOption, animations] of animationData.entries()) {
