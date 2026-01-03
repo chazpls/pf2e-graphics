@@ -1,0 +1,26 @@
+{
+	"origin:item:slug:freezing-rain": [
+		{
+			"triggers": [
+				"place-template"
+			],
+			"execute": {
+				"type": "graphic",
+				"graphic": [
+					"jb2a.impact.frost.white.01"
+				],
+				"position": {
+					"type": "dynamic",
+					"location": "TEMPLATES"
+				},
+				"size": {
+					"type": "directed",
+					"endpoint": "TEMPLATES"
+				}
+			},
+			"predicates": [
+				"settings:persistent"
+			]
+		}
+	]
+}

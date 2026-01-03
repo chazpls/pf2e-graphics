@@ -1,0 +1,26 @@
+{
+	"item:group:crossbow": [
+		{
+			"triggers": [
+				"attack-roll"
+			],
+			"predicates": [
+				"jb2a:patreon"
+			],
+			"execute": {
+				"type": "graphic",
+				"graphic": [
+					"jb2a.bolt.physical.white02"
+				],
+				"position": {
+					"type": "static",
+					"location": "SOURCES"
+				},
+				"size": {
+					"type": "directed",
+					"endpoint": "TARGETS"
+				}
+			}
+		}
+	]
+}

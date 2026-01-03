@@ -1,0 +1,87 @@
+{
+	"origin:item:slug:falling-stars": [
+		{
+			"triggers": [
+				"place-template"
+			],
+			"execute": {
+				"type": "graphic",
+				"graphic": [
+					"jb2a.burning_hands.01.orange"
+				],
+				"position": {
+					"type": "dynamic",
+					"location": "TEMPLATES"
+				},
+				"size": {
+					"type": "relative",
+					"relativeTo": "SOURCES",
+					"scaling": 1.2
+				}
+			},
+			"contents": [
+				{
+					"default": true,
+					"execute": {
+						"type": "graphic",
+						"graphic": [
+							"jb2a.divine_smite.target.blueyellow"
+						],
+						"position": {
+							"type": "dynamic",
+							"location": "SOURCES"
+						},
+						"size": {
+							"type": "relative",
+							"relativeTo": "SOURCES"
+						}
+					}
+				},
+				{
+					"predicates": [
+						{
+							"gte": [
+								"settings:quality",
+								2
+							]
+						}
+					],
+					"contents": [
+						{
+							"execute": {
+								"type": "graphic",
+								"graphic": [
+									"jb2a.divine_smite.target.blueyellow"
+								],
+								"position": {
+									"type": "dynamic",
+									"location": "SOURCES"
+								},
+								"size": {
+									"type": "relative",
+									"relativeTo": "SOURCES"
+								}
+							}
+						},
+						{
+							"execute": {
+								"type": "graphic",
+								"graphic": [
+									"jb2a.template_circle.out_pulse.02.burst.bluewhite"
+								],
+								"position": {
+									"type": "dynamic",
+									"location": "SOURCES"
+								},
+								"size": {
+									"type": "relative",
+									"relativeTo": "SOURCES"
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

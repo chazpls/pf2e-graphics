@@ -1,0 +1,61 @@
+{
+	"condition:blinded": [
+		{
+			"predicates": [
+				{
+					"gte": [
+						"settings:quality",
+						1
+					]
+				}
+			],
+			"execute": {
+				"type": "graphic",
+				"graphic": [
+					"jb2a.markers.smoke.ring.loop.bluepurple"
+				],
+				"position": {
+					"type": "dynamic",
+					"location": "SOURCES"
+				},
+				"size": {
+					"type": "relative",
+					"relativeTo": "SOURCES",
+					"scaling": 1.5
+				},
+				"fadeIn": {
+					"duration": 250
+				},
+				"fadeOut": {
+					"duration": 500
+				},
+				"rotation": {
+					"type": "absolute",
+					"angle": "random"
+				}
+			},
+			"contents": [
+				{
+					"triggers": [
+						"start-turn",
+						"effect"
+					],
+					"default": true
+				},
+				{
+					"triggers": [
+						"effect"
+					],
+					"predicates": [
+						"settings:persistent"
+					],
+					"execute": {
+						"type": "graphic",
+						"tieToDocuments": true,
+						"persistent": "tokenPrototype"
+					}
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"item:slug:harmonize-self": [
+		{
+			"triggers": [
+				"damage-taken"
+			],
+			"execute": {
+				"type": "graphic",
+				"graphic": [
+					"jb2a.energy_strands.in.green.01.2"
+				],
+				"position": {
+					"type": "dynamic",
+					"location": "SOURCES"
+				},
+				"size": {
+					"type": "relative",
+					"relativeTo": "SOURCES",
+					"scaling": 2
+				}
+			}
+		}
+	]
+}

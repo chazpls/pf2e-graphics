@@ -1,0 +1,28 @@
+{
+	"item:slug:claw": "item:slug:claws",
+	"item:slug:claws": [
+		{
+			"triggers": [
+				"attack-roll"
+			],
+			"overrides": [
+				"item:group:brawling"
+			],
+			"execute": {
+				"type": "graphic",
+				"graphic": [
+					"jb2a.claws.400px.red"
+				],
+				"position": {
+					"type": "dynamic",
+					"location": "TARGETS"
+				},
+				"size": {
+					"type": "relative",
+					"relativeTo": "SOURCES",
+					"scaling": 2
+				}
+			}
+		}
+	]
+}

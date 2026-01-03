@@ -1,0 +1,128 @@
+{
+	"effect:spell-effect-shields-of-the-spirit-security": [
+		{
+			"execute": {
+				"type": "graphic",
+				"graphic": [
+					"jb2a.shield.01.complete.01"
+				],
+				"position": {
+					"type": "dynamic",
+					"location": "SOURCES"
+				},
+				"size": {
+					"type": "relative",
+					"relativeTo": "SOURCES",
+					"scaling": 1.5
+				},
+				"tieToDocuments": true
+			},
+			"contents": [
+				{
+					"predicates": [
+						"jb2a:free"
+					],
+					"execute": {
+						"type": "graphic",
+						"graphic": [
+							"jb2a.markers.shield_rampart.complete.01.orange"
+						],
+						"position": {
+							"type": "dynamic",
+							"location": "SOURCES"
+						},
+						"size": {
+							"type": "relative",
+							"relativeTo": "SOURCES"
+						},
+						"filters": [
+							{
+								"type": "ColorMatrix",
+								"options": {
+									"hue": 150
+								}
+							}
+						]
+					},
+					"contents": [
+						{
+							"triggers": [
+								"start-turn",
+								"effect"
+							],
+							"predicates": [
+								{
+									"lte": [
+										"settings:quality",
+										2
+									]
+								}
+							]
+						},
+						{
+							"triggers": [
+								"effect"
+							],
+							"predicates": [
+								"settings:persistent"
+							],
+							"execute": {
+								"type": "graphic",
+								"tieToDocuments": true,
+								"persistent": "tokenPrototype"
+							}
+						}
+					]
+				},
+				{
+					"predicates": [
+						"jb2a:patreon"
+					],
+					"execute": {
+						"type": "graphic",
+						"graphic": [
+							"jb2a.markers.shield_rampart.complete.03.blue"
+						],
+						"position": {
+							"type": "dynamic",
+							"location": "SOURCES"
+						},
+						"size": {
+							"type": "relative",
+							"relativeTo": "SOURCES"
+						}
+					},
+					"contents": [
+						{
+							"triggers": [
+								"start-turn",
+								"effect"
+							],
+							"predicates": [
+								{
+									"lte": [
+										"settings:quality",
+										2
+									]
+								}
+							]
+						},
+						{
+							"triggers": [
+								"effect"
+							],
+							"predicates": [
+								"settings:persistent"
+							],
+							"execute": {
+								"type": "graphic",
+								"tieToDocuments": true,
+								"persistent": "tokenPrototype"
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

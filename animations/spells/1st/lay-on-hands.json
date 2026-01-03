@@ -1,0 +1,24 @@
+{
+	"item:slug:lay-on-hands": [
+		{
+			"triggers": [
+				"damage-taken"
+			],
+			"execute": {
+				"type": "graphic",
+				"graphic": [
+					"jb2a.cure_wounds.400px.blue"
+				],
+				"position": {
+					"type": "dynamic",
+					"location": "TARGETS"
+				},
+				"size": {
+					"type": "relative",
+					"relativeTo": "SOURCES",
+					"scaling": 1.5
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,34 @@
+{
+	"item:group:shield": [
+		{
+			"triggers": [
+				"attack-roll"
+			],
+			"execute": {
+				"type": "graphic",
+				"graphic": [
+					"jb2a.melee_attack.06.shield.01"
+				],
+				"position": {
+					"type": "static",
+					"location": "SOURCES",
+					"anchor": {
+						"x": 0.4
+					}
+				},
+				"reflection": {
+					"y": "random"
+				},
+				"size": {
+					"type": "relative",
+					"relativeTo": "SOURCES",
+					"scaling": 5
+				},
+				"rotation": {
+					"type": "relative",
+					"location": "TARGETS"
+				}
+			}
+		}
+	]
+}

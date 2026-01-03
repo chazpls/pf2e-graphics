@@ -1,0 +1,73 @@
+{
+	"item:group:pick": [
+		{
+			"triggers": [
+				"attack-roll"
+			],
+			"execute": {
+				"type": "graphic",
+				"graphic": [
+					"jb2a.melee_attack.02.handaxe.01"
+				],
+				"position": {
+					"type": "static",
+					"location": "SOURCES",
+					"anchor": {
+						"x": 0.4
+					}
+				},
+				"reflection": {
+					"y": "random"
+				},
+				"size": {
+					"type": "relative",
+					"relativeTo": "SOURCES",
+					"scaling": 5
+				},
+				"rotation": {
+					"type": "relative",
+					"location": "TARGETS"
+				}
+			},
+			"contents": [
+				{
+					"predicates": [
+						"jb2a:patreon"
+					],
+					"execute": {
+						"type": "graphic",
+						"graphic": [
+							"jb2a.melee_generic.piercing.one_handed"
+						],
+						"position": {
+							"type": "dynamic",
+							"location": "SOURCES"
+						},
+						"size": {
+							"type": "relative",
+							"relativeTo": "SOURCES",
+							"scaling": 5
+						}
+					}
+				},
+				{
+					"default": true,
+					"execute": {
+						"type": "graphic",
+						"graphic": [
+							"jb2a.melee_attack.03.trail.01.blueyellow"
+						],
+						"position": {
+							"type": "dynamic",
+							"location": "SOURCES"
+						},
+						"size": {
+							"type": "relative",
+							"relativeTo": "SOURCES"
+						}
+					}
+				}
+			]
+		}
+	]
+}

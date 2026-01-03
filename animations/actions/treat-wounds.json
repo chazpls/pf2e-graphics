@@ -1,0 +1,87 @@
+{
+	"action:treat-wounds": [
+		{
+			"triggers": [
+				"skill-check"
+			],
+			"predicates": [
+				{
+					"not": "check:outcome:failure"
+				}
+			],
+			"execute": {
+				"type": "graphic",
+				"graphic": [
+					"jb2a.healing_generic.400px.green"
+				],
+				"position": {
+					"type": "dynamic",
+					"location": "TARGETS"
+				},
+				"size": {
+					"type": "relative",
+					"relativeTo": "SOURCES",
+					"scaling": 1.5
+				}
+			},
+			"contents": [
+				{
+					"default": true
+				},
+				{
+					"predicates": [
+						"check:outcome:critical-failure"
+					],
+					"contents": [
+						{
+							"predicates": [
+								"jb2a:patreon"
+							],
+							"execute": {
+								"type": "graphic",
+								"graphic": [
+									"jb2a.liquid.splash.red"
+								],
+								"position": {
+									"type": "dynamic",
+									"location": "SOURCES"
+								},
+								"size": {
+									"type": "relative",
+									"relativeTo": "SOURCES"
+								}
+							}
+						},
+						{
+							"predicates": [
+								"jb2a:free"
+							],
+							"execute": {
+								"type": "graphic",
+								"graphic": [
+									"jb2a.liquid.splash.blue"
+								],
+								"position": {
+									"type": "dynamic",
+									"location": "SOURCES"
+								},
+								"size": {
+									"type": "relative",
+									"relativeTo": "SOURCES"
+								},
+								"filters": [
+									{
+										"type": "ColorMatrix",
+										"options": {
+											"hue": 145
+										}
+									}
+								]
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,37 @@
+{
+	"item:group:brawling": [
+		{
+			"triggers": [
+				"attack-roll"
+			],
+			"predicates": [
+				"jb2a:patreon"
+			],
+			"execute": {
+				"type": "graphic",
+				"graphic": [
+					"jb2a.unarmed_strike.physical.01.yellow"
+				],
+				"position": {
+					"type": "static",
+					"location": "SOURCES",
+					"anchor": {
+						"x": 0.4
+					}
+				},
+				"reflection": {
+					"y": "random"
+				},
+				"size": {
+					"type": "relative",
+					"relativeTo": "SOURCES",
+					"scaling": 5
+				},
+				"rotation": {
+					"type": "relative",
+					"location": "TARGETS"
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,128 @@
+{
+	"item:group:spear": [
+		{
+			"predicates": [
+				"jb2a:patreon"
+			],
+			"contents": [
+				{
+					"triggers": [
+						"attack-roll"
+					],
+					"predicates": [
+						"thrown"
+					],
+					"execute": {
+						"type": "graphic",
+						"graphic": [
+							"jb2a.spear.throw.01"
+						],
+						"position": {
+							"type": "static",
+							"location": "SOURCES"
+						},
+						"size": {
+							"type": "directed",
+							"endpoint": "TARGETS"
+						}
+					}
+				},
+				{
+					"triggers": [
+						"attack-roll"
+					],
+					"predicates": [
+						"melee"
+					],
+					"execute": {
+						"type": "graphic",
+						"graphic": [
+							"jb2a.spear.melee.01.white"
+						],
+						"position": {
+							"type": "static",
+							"location": "SOURCES",
+							"anchor": {
+								"x": 0.4
+							}
+						},
+						"reflection": {
+							"y": "random"
+						},
+						"size": {
+							"type": "relative",
+							"relativeTo": "SOURCES",
+							"scaling": 5
+						},
+						"rotation": {
+							"type": "relative",
+							"location": "TARGETS"
+						}
+					}
+				}
+			]
+		},
+		{
+			"predicates": [
+				"jb2a:free"
+			],
+			"contents": [
+				{
+					"triggers": [
+						"attack-roll"
+					],
+					"predicates": [
+						"thrown"
+					],
+					"execute": {
+						"type": "graphic",
+						"graphic": [
+							"jb2a.bolt.physical.orange"
+						],
+						"position": {
+							"type": "static",
+							"location": "SOURCES"
+						},
+						"size": {
+							"type": "directed",
+							"endpoint": "TARGETS"
+						}
+					}
+				},
+				{
+					"triggers": [
+						"attack-roll"
+					],
+					"predicates": [
+						"melee"
+					],
+					"execute": {
+						"type": "graphic",
+						"graphic": [
+							"jb2a.spear.melee.01.white"
+						],
+						"position": {
+							"type": "static",
+							"location": "SOURCES",
+							"anchor": {
+								"x": 0.4
+							}
+						},
+						"reflection": {
+							"y": "random"
+						},
+						"size": {
+							"type": "relative",
+							"relativeTo": "SOURCES",
+							"scaling": 5
+						},
+						"rotation": {
+							"type": "relative",
+							"location": "TARGETS"
+						}
+					}
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,64 @@
+{
+	"item:slug:earthbind": [
+		{
+			"triggers": [
+				"saving-throw"
+			],
+			"execute": {
+				"type": "graphic",
+				"graphic": [
+					"jb2a.shield.01.complete.01"
+				],
+				"position": {
+					"type": "dynamic",
+					"location": "TARGETS"
+				},
+				"size": {
+					"type": "relative",
+					"relativeTo": "SOURCES",
+					"scaling": 1.5
+				}
+			},
+			"contents": [
+				{
+					"predicates": [
+						"jb2a:free"
+					],
+					"execute": {
+						"type": "graphic",
+						"graphic": [
+							"jb2a.markers.chain.spectral_standard.complete.02.blue"
+						],
+						"position": {
+							"type": "dynamic",
+							"location": "SOURCES"
+						},
+						"size": {
+							"type": "relative",
+							"relativeTo": "SOURCES"
+						}
+					}
+				},
+				{
+					"predicates": [
+						"jb2a:patreon"
+					],
+					"execute": {
+						"type": "graphic",
+						"graphic": [
+							"jb2a.markers.chain.diamond.loop.01.yellow"
+						],
+						"position": {
+							"type": "dynamic",
+							"location": "SOURCES"
+						},
+						"size": {
+							"type": "relative",
+							"relativeTo": "SOURCES"
+						}
+					}
+				}
+			]
+		}
+	]
+}

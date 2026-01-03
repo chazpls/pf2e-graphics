@@ -1,0 +1,23 @@
+{
+	"item:slug:spirit-blast": [
+		{
+			"triggers": [
+				"damage-roll"
+			],
+			"execute": {
+				"type": "graphic",
+				"graphic": [
+					"jb2a.ranged.03.instant.01.bluegreen"
+				],
+				"position": {
+					"type": "static",
+					"location": "SOURCES"
+				},
+				"size": {
+					"type": "directed",
+					"endpoint": "TARGETS"
+				}
+			}
+		}
+	]
+}

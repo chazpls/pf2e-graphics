@@ -1,0 +1,172 @@
+{
+	"action:extract-element": [
+		{
+			"triggers": [
+				"damage-taken"
+			],
+			"execute": {
+				"type": "graphic",
+				"graphic": [
+					"jb2a.shield.01.complete.01"
+				],
+				"position": {
+					"type": "dynamic",
+					"location": "TARGETS"
+				},
+				"size": {
+					"type": "relative",
+					"relativeTo": "SOURCES",
+					"scaling": 2
+				}
+			},
+			"contents": [
+				{
+					"predicates": [
+						"self:trait:air",
+						"kinetic-gate:air"
+					],
+					"execute": {
+						"type": "graphic",
+						"graphic": [
+							"jb2a.template_circle.out_pulse.02.loop.bluewhite"
+						],
+						"position": {
+							"type": "dynamic",
+							"location": "SOURCES"
+						},
+						"size": {
+							"type": "relative",
+							"relativeTo": "SOURCES"
+						}
+					}
+				},
+				{
+					"predicates": [
+						"self:trait:earth",
+						"kinetic-gate:earth"
+					],
+					"contents": [
+						{
+							"predicates": [
+								"jb2a:free"
+							],
+							"execute": {
+								"type": "graphic",
+								"graphic": [
+									"jb2a.cast_generic.earth.01.browngreen.0"
+								],
+								"position": {
+									"type": "dynamic",
+									"location": "SOURCES"
+								},
+								"size": {
+									"type": "relative",
+									"relativeTo": "SOURCES"
+								}
+							}
+						},
+						{
+							"predicates": [
+								"jb2a:patreon"
+							],
+							"execute": {
+								"type": "graphic",
+								"graphic": [
+									"jb2a.impact.earth.01.browngreen.0"
+								],
+								"position": {
+									"type": "dynamic",
+									"location": "SOURCES"
+								},
+								"size": {
+									"type": "relative",
+									"relativeTo": "SOURCES"
+								}
+							}
+						}
+					]
+				},
+				{
+					"predicates": [
+						"self:trait:fire",
+						"kinetic-gate:fire"
+					],
+					"execute": {
+						"type": "graphic",
+						"graphic": [
+							"jb2a.impact.fire.01.orange.0"
+						],
+						"position": {
+							"type": "dynamic",
+							"location": "SOURCES"
+						},
+						"size": {
+							"type": "relative",
+							"relativeTo": "SOURCES"
+						}
+					}
+				},
+				{
+					"predicates": [
+						"self:trait:metal",
+						"kinetic-gate:metal"
+					],
+					"execute": {
+						"type": "graphic",
+						"graphic": [
+							"jb2a.aura_themed.01.outward.complete.metal.01.grey"
+						],
+						"position": {
+							"type": "dynamic",
+							"location": "SOURCES"
+						},
+						"size": {
+							"type": "relative",
+							"relativeTo": "SOURCES"
+						}
+					}
+				},
+				{
+					"predicates": [
+						"self:trait:water",
+						"kinetic-gate:water"
+					],
+					"execute": {
+						"type": "graphic",
+						"graphic": [
+							"jb2a.impact.water.02.blue.0"
+						],
+						"position": {
+							"type": "dynamic",
+							"location": "SOURCES"
+						},
+						"size": {
+							"type": "relative",
+							"relativeTo": "SOURCES"
+						}
+					}
+				},
+				{
+					"predicates": [
+						"self:trait:wood",
+						"kinetic-gate:wood"
+					],
+					"execute": {
+						"type": "graphic",
+						"graphic": [
+							"jb2a.aura_themed.01.outward.complete.wood.01.green"
+						],
+						"position": {
+							"type": "dynamic",
+							"location": "SOURCES"
+						},
+						"size": {
+							"type": "relative",
+							"relativeTo": "SOURCES"
+						}
+					}
+				}
+			]
+		}
+	]
+}

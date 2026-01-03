@@ -1,0 +1,23 @@
+{
+	"item:slug:blazing-bolt": [
+		{
+			"triggers": [
+				"attack-roll"
+			],
+			"execute": {
+				"type": "graphic",
+				"graphic": [
+					"jb2a.scorching_ray.01.orange"
+				],
+				"position": {
+					"type": "static",
+					"location": "SOURCES"
+				},
+				"size": {
+					"type": "directed",
+					"endpoint": "TARGETS"
+				}
+			}
+		}
+	]
+}

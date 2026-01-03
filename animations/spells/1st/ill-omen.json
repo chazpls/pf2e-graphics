@@ -1,0 +1,44 @@
+{
+	"effect:ill-omen": [
+		{
+			"predicates": [
+				{
+					"gte": [
+						"settings:quality",
+						1
+					]
+				},
+				"jb2a:patreon"
+			],
+			"execute": {
+				"type": "graphic",
+				"graphic": [
+					"jb2a.magic_signs.circle.02.necromancy.complete.dark_purple"
+				],
+				"position": {
+					"type": "dynamic",
+					"location": "SOURCES"
+				},
+				"size": {
+					"type": "relative",
+					"relativeTo": "SOURCES",
+					"scaling": 0.8
+				}
+			},
+			"contents": [
+				{
+					"predicates": [
+						"settings:persistent"
+					]
+				},
+				{
+					"triggers": [
+						"effect",
+						"start-turn"
+					],
+					"default": true
+				}
+			]
+		}
+	]
+}

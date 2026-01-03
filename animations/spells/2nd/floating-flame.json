@@ -1,0 +1,22 @@
+{
+	"origin:item:slug:floating-flame": [
+		{
+			"reference": "origin:item:slug:wildfire",
+			"execute": {
+				"type": "graphic",
+				"graphic": [
+					"jb2a.flaming_sphere.200px.orange.02"
+				],
+				"position": {
+					"type": "dynamic",
+					"location": "SOURCES"
+				},
+				"size": {
+					"type": "relative",
+					"relativeTo": "SOURCES",
+					"scaling": 1.5
+				}
+			}
+		}
+	]
+}

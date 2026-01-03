@@ -1,0 +1,66 @@
+{
+	"item:group:firearm": [
+		{
+			"triggers": [
+				"attack-roll"
+			],
+			"execute": {
+				"type": "graphic",
+				"graphic": [
+					"jb2a.arrow"
+				],
+				"position": {
+					"type": "static",
+					"location": "SOURCES"
+				},
+				"size": {
+					"type": "directed",
+					"endpoint": "TARGETS"
+				}
+			},
+			"contents": [
+				{
+					"default": true,
+					"execute": {
+						"type": "graphic",
+						"graphic": [
+							"jb2a.bullet.01.orange"
+						],
+						"position": {
+							"type": "dynamic",
+							"location": "SOURCES"
+						},
+						"size": {
+							"type": "relative",
+							"relativeTo": "SOURCES"
+						}
+					}
+				},
+				{
+					"predicates": [
+						{
+							"lte": [
+								"item:damage:die:faces",
+								6
+							]
+						}
+					],
+					"execute": {
+						"type": "graphic",
+						"graphic": [
+							"jb2a.bullet.02.orange"
+						],
+						"position": {
+							"type": "dynamic",
+							"location": "SOURCES"
+						},
+						"size": {
+							"type": "relative",
+							"relativeTo": "SOURCES"
+						}
+					}
+				}
+			]
+		}
+	]
+}

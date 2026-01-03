@@ -1,0 +1,41 @@
+{
+	"origin:item:slug:mushroom-patch": [
+		{
+			"triggers": [
+				"place-template"
+			],
+			"execute": {
+				"type": "graphic",
+				"graphic": [
+					"jb2a.plant_growth.03.round.4x4.complete.greenyellow"
+				],
+				"position": {
+					"type": "dynamic",
+					"location": "TEMPLATES"
+				},
+				"size": {
+					"type": "relative",
+					"relativeTo": "SOURCES",
+					"scaling": 1.1
+				}
+			},
+			"contents": [
+				{
+					"predicates": [
+						{
+							"gte": [
+								"settings:quality",
+								1
+							]
+						}
+					]
+				},
+				{
+					"predicates": [
+						"settings:persistent"
+					]
+				}
+			]
+		}
+	]
+}

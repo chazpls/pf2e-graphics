@@ -1,5 +1,5 @@
 {
-	"condition:restrained": [
+	"condition:fleeing": [
 		{
 			"predicates": [
 				{
@@ -12,7 +12,7 @@
 			"execute": {
 				"type": "graphic",
 				"graphic": [
-					"jb2a.markers.chain.standard.complete.02.red"
+					"jb2a.markers.fear.dark_purple.01"
 				],
 				"position": {
 					"type": "dynamic",
@@ -20,39 +20,33 @@
 				},
 				"size": {
 					"type": "relative",
-					"scaling": 2
+					"relativeTo": "SOURCES",
+					"scaling": 1.5
 				},
 				"fadeIn": {
 					"duration": 250
 				},
 				"fadeOut": {
 					"duration": 500
-				},
-				"filters": [
-					{
-						"type": "ColorMatrix",
-						"options": {
-							"saturate": -1
-						}
-					}
-				]
+				}
 			},
 			"contents": [
 				{
-					"default": true,
 					"triggers": [
 						"start-turn",
 						"effect"
-					]
+					],
+					"default": true
 				},
 				{
-					"predicates": [
-						"settings:persistent"
-					],
 					"triggers": [
 						"effect"
 					],
+					"predicates": [
+						"settings:persistent"
+					],
 					"execute": {
+						"type": "graphic",
 						"tieToDocuments": true,
 						"persistent": "tokenPrototype"
 					}

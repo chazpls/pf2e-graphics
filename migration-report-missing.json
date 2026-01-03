@@ -1,0 +1,1485 @@
+{
+  "missing": [
+    {
+      "rollOption": "action:administer-first-aid",
+      "oldFiles": [
+        "animations_old\\actions\\administer-first-aid.json"
+      ]
+    },
+    {
+      "rollOption": "effect:aid",
+      "oldFiles": [
+        "animations_old\\actions\\aid.json"
+      ]
+    },
+    {
+      "rollOption": "self:effect:aid",
+      "oldFiles": [
+        "animations_old\\actions\\aid.json"
+      ]
+    },
+    {
+      "rollOption": "action:battle-medicine",
+      "oldFiles": [
+        "animations_old\\actions\\battle-medicine.json"
+      ]
+    },
+    {
+      "rollOption": "action:dirty-trick",
+      "oldFiles": [
+        "animations_old\\actions\\dirty-trick.json"
+      ]
+    },
+    {
+      "rollOption": "action:grapple",
+      "oldFiles": [
+        "animations_old\\actions\\grapple.json"
+      ]
+    },
+    {
+      "rollOption": "action:seek",
+      "oldFiles": [
+        "animations_old\\actions\\seek.json"
+      ]
+    },
+    {
+      "rollOption": "action:shove",
+      "oldFiles": [
+        "animations_old\\actions\\shove.json"
+      ]
+    },
+    {
+      "rollOption": "action:treat-wounds",
+      "oldFiles": [
+        "animations_old\\actions\\treat-wounds.json"
+      ]
+    },
+    {
+      "rollOption": "action:trip",
+      "oldFiles": [
+        "animations_old\\actions\\trip.json"
+      ]
+    },
+    {
+      "rollOption": "item:type:spell",
+      "oldFiles": [
+        "animations_old\\add-ons\\casting-spell.json"
+      ]
+    },
+    {
+      "rollOption": "origin:item:type:spell",
+      "oldFiles": [
+        "animations_old\\add-ons\\casting-spell.json"
+      ]
+    },
+    {
+      "rollOption": "effect:marshals-aura",
+      "oldFiles": [
+        "animations_old\\archetypes\\marshal\\marshals-aura.json"
+      ]
+    },
+    {
+      "rollOption": "effect:rage",
+      "oldFiles": [
+        "animations_old\\class\\barbarian\\rage.json"
+      ]
+    },
+    {
+      "rollOption": "effect:devise-a-stratagem",
+      "oldFiles": [
+        "animations_old\\class\\investigator\\devise-a-stratagem.json"
+      ]
+    },
+    {
+      "rollOption": "check:substitution:devise-a-stratagem",
+      "oldFiles": [
+        "animations_old\\class\\investigator\\strategic-strike.json"
+      ]
+    },
+    {
+      "rollOption": "action:surgical-shock",
+      "oldFiles": [
+        "animations_old\\class\\investigator\\surgical-shock.json"
+      ]
+    },
+    {
+      "rollOption": "origin:item:slug:blazing-wave",
+      "oldFiles": [
+        "animations_old\\class\\kineticist\\blazing-wave.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:elemental-blast",
+      "oldFiles": [
+        "animations_old\\class\\kineticist\\elemental-blast.json"
+      ]
+    },
+    {
+      "rollOption": "action:extract-element",
+      "oldFiles": [
+        "animations_old\\class\\kineticist\\extract-element.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:flying-flame",
+      "oldFiles": [
+        "animations_old\\class\\kineticist\\flying-flame.json"
+      ]
+    },
+    {
+      "rollOption": "effect:kinetic-aura",
+      "oldFiles": [
+        "animations_old\\class\\kineticist\\kinetic-aura.json"
+      ]
+    },
+    {
+      "rollOption": "item:nudge-the-scales",
+      "oldFiles": [
+        "animations_old\\class\\oracle\\nudge-the-scales.json"
+      ]
+    },
+    {
+      "rollOption": "effect:unleash-psyche",
+      "oldFiles": [
+        "animations_old\\class\\psychic\\unleash-psyche.json"
+      ]
+    },
+    {
+      "rollOption": "feature:sneak-attack",
+      "oldFiles": [
+        "animations_old\\class\\rogue\\sneak-attack.json"
+      ]
+    },
+    {
+      "rollOption": "finisher:bleeding",
+      "oldFiles": [
+        "animations_old\\class\\swashbuckler\\bleeding-finisher.json"
+      ]
+    },
+    {
+      "rollOption": "finisher:confident",
+      "oldFiles": [
+        "animations_old\\class\\swashbuckler\\confident-finisher.json"
+      ]
+    },
+    {
+      "rollOption": "effect:panache",
+      "oldFiles": [
+        "animations_old\\class\\swashbuckler\\panache.json"
+      ]
+    },
+    {
+      "rollOption": "effect:exploit-personal-antithesis",
+      "oldFiles": [
+        "animations_old\\class\\thaumaturge\\exploit-vulnerability.json"
+      ]
+    },
+    {
+      "rollOption": "effect:exploit-mortal-weakness",
+      "oldFiles": [
+        "animations_old\\class\\thaumaturge\\exploit-vulnerability.json"
+      ]
+    },
+    {
+      "rollOption": "action:drain-bonded-item",
+      "oldFiles": [
+        "animations_old\\class\\wizard\\drain-bonded-item.json"
+      ]
+    },
+    {
+      "rollOption": "condition:blinded",
+      "oldFiles": [
+        "animations_old\\conditions\\blinded.json"
+      ]
+    },
+    {
+      "rollOption": "condition:clumsy",
+      "oldFiles": [
+        "animations_old\\conditions\\clumsy.json"
+      ]
+    },
+    {
+      "rollOption": "condition:confused",
+      "oldFiles": [
+        "animations_old\\conditions\\confused.json"
+      ]
+    },
+    {
+      "rollOption": "condition:controlled",
+      "oldFiles": [
+        "animations_old\\conditions\\controlled.json"
+      ]
+    },
+    {
+      "rollOption": "condition:dazzled",
+      "oldFiles": [
+        "animations_old\\conditions\\dazzled.json"
+      ]
+    },
+    {
+      "rollOption": "condition:deafened",
+      "oldFiles": [
+        "animations_old\\conditions\\deafened.json"
+      ]
+    },
+    {
+      "rollOption": "condition:doomed",
+      "oldFiles": [
+        "animations_old\\conditions\\doomed.json"
+      ]
+    },
+    {
+      "rollOption": "condition:drained",
+      "oldFiles": [
+        "animations_old\\conditions\\drained.json"
+      ]
+    },
+    {
+      "rollOption": "condition:dying",
+      "oldFiles": [
+        "animations_old\\conditions\\dying.json"
+      ]
+    },
+    {
+      "rollOption": "condition:encumbered",
+      "oldFiles": [
+        "animations_old\\conditions\\encumbered.json"
+      ]
+    },
+    {
+      "rollOption": "condition:enfeebled",
+      "oldFiles": [
+        "animations_old\\conditions\\enfeebled.json"
+      ]
+    },
+    {
+      "rollOption": "condition:fascinated",
+      "oldFiles": [
+        "animations_old\\conditions\\fascinated.json"
+      ]
+    },
+    {
+      "rollOption": "condition:fatigued",
+      "oldFiles": [
+        "animations_old\\conditions\\fatigued.json"
+      ]
+    },
+    {
+      "rollOption": "condition:fleeing",
+      "oldFiles": [
+        "animations_old\\conditions\\fleeing.json"
+      ]
+    },
+    {
+      "rollOption": "condition:frightened",
+      "oldFiles": [
+        "animations_old\\conditions\\frightened.json"
+      ]
+    },
+    {
+      "rollOption": "condition:grabbed",
+      "oldFiles": [
+        "animations_old\\conditions\\grabbed.json"
+      ]
+    },
+    {
+      "rollOption": "condition:off-guard",
+      "oldFiles": [
+        "animations_old\\conditions\\off-guard.json"
+      ]
+    },
+    {
+      "rollOption": "condition:paralyzed",
+      "oldFiles": [
+        "animations_old\\conditions\\paralyzed.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:persistent-damage",
+      "oldFiles": [
+        "animations_old\\conditions\\persistent-damage.json"
+      ]
+    },
+    {
+      "rollOption": "condition:petrified",
+      "oldFiles": [
+        "animations_old\\conditions\\petrified.json"
+      ]
+    },
+    {
+      "rollOption": "condition:prone",
+      "oldFiles": [
+        "animations_old\\conditions\\prone.json"
+      ]
+    },
+    {
+      "rollOption": "condition:quickened",
+      "oldFiles": [
+        "animations_old\\conditions\\quickened.json"
+      ]
+    },
+    {
+      "rollOption": "condition:sickened",
+      "oldFiles": [
+        "animations_old\\conditions\\sickened.json"
+      ]
+    },
+    {
+      "rollOption": "condition:slowed",
+      "oldFiles": [
+        "animations_old\\conditions\\slowed.json"
+      ]
+    },
+    {
+      "rollOption": "condition:stunned",
+      "oldFiles": [
+        "animations_old\\conditions\\stunned.json"
+      ]
+    },
+    {
+      "rollOption": "condition:stupefied",
+      "oldFiles": [
+        "animations_old\\conditions\\stupefied.json"
+      ]
+    },
+    {
+      "rollOption": "condition:unconscious",
+      "oldFiles": [
+        "animations_old\\conditions\\unconscious.json"
+      ]
+    },
+    {
+      "rollOption": "condition:wounded",
+      "oldFiles": [
+        "animations_old\\conditions\\wounded.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:diabolic-quill",
+      "oldFiles": [
+        "animations_old\\creature-abilities\\diabolic-quill.json"
+      ]
+    },
+    {
+      "rollOption": "effect:champions-resistance",
+      "oldFiles": [
+        "animations_old\\effects\\champions-resistance.json"
+      ]
+    },
+    {
+      "rollOption": "effect:cyclonic-ascent",
+      "oldFiles": [
+        "animations_old\\effects\\cyclonic-ascent.json"
+      ]
+    },
+    {
+      "rollOption": "effect:dueling-dance",
+      "oldFiles": [
+        "animations_old\\effects\\dueling-dance.json"
+      ]
+    },
+    {
+      "rollOption": "effect:dueling-parry",
+      "oldFiles": [
+        "animations_old\\effects\\dueling-parry.json"
+      ]
+    },
+    {
+      "rollOption": "effect:twin-parry",
+      "oldFiles": [
+        "animations_old\\effects\\twin-parry.json"
+      ]
+    },
+    {
+      "rollOption": "effect:twin-parry-parry-trait",
+      "oldFiles": [
+        "animations_old\\effects\\twin-parry.json"
+      ]
+    },
+    {
+      "rollOption": "effect:twinned-defense",
+      "oldFiles": [
+        "animations_old\\effects\\twinned-defense.json"
+      ]
+    },
+    {
+      "rollOption": "feat:slug:trap-finder",
+      "oldFiles": [
+        "animations_old\\feats\\trap-finder.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:healers-gloves",
+      "oldFiles": [
+        "animations_old\\items\\healers-gloves.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:healers-gloves-greater",
+      "oldFiles": [
+        "animations_old\\items\\healers-gloves.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:acid-splash",
+      "oldFiles": [
+        "animations_old\\spells\\1st\\acid-splash.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:admonishing-ray",
+      "oldFiles": [
+        "animations_old\\spells\\1st\\admonishing-ray.json"
+      ]
+    },
+    {
+      "rollOption": "origin:item:slug:alarm",
+      "oldFiles": [
+        "animations_old\\spells\\1st\\alarm.json"
+      ]
+    },
+    {
+      "rollOption": "effect:athletic-rush",
+      "oldFiles": [
+        "animations_old\\spells\\1st\\athletic-rush.json"
+      ]
+    },
+    {
+      "rollOption": "effect:boost-eidolon",
+      "oldFiles": [
+        "animations_old\\spells\\1st\\boost-eidolon.json"
+      ]
+    },
+    {
+      "rollOption": "origin:item:slug:breathe-fire",
+      "oldFiles": [
+        "animations_old\\spells\\1st\\breathe-fire.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:briny-bolt",
+      "oldFiles": [
+        "animations_old\\spells\\1st\\briny-bolt.json"
+      ]
+    },
+    {
+      "rollOption": "origin:item:slug:caustic-blast",
+      "oldFiles": [
+        "animations_old\\spells\\1st\\caustic-blast.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:charm",
+      "oldFiles": [
+        "animations_old\\spells\\1st\\charm.json"
+      ]
+    },
+    {
+      "rollOption": "origin:item:slug:chilling-spray",
+      "oldFiles": [
+        "animations_old\\spells\\1st\\chilling-spray.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:command",
+      "oldFiles": [
+        "animations_old\\spells\\1st\\command.json"
+      ]
+    },
+    {
+      "rollOption": "spell:cornucopia",
+      "oldFiles": [
+        "animations_old\\spells\\1st\\cornucopia.json"
+      ]
+    },
+    {
+      "rollOption": "effect:slug:aura-courageous-anthem",
+      "oldFiles": [
+        "animations_old\\spells\\1st\\courageous-anthem.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:crushing-ground",
+      "oldFiles": [
+        "animations_old\\spells\\1st\\crushing-ground.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:daze",
+      "oldFiles": [
+        "animations_old\\spells\\1st\\daze.json"
+      ]
+    },
+    {
+      "rollOption": "origin:item:slug:detect-magic",
+      "oldFiles": [
+        "animations_old\\spells\\1st\\detect-magic.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:divine-lance",
+      "oldFiles": [
+        "animations_old\\spells\\1st\\divine-lance.json"
+      ]
+    },
+    {
+      "rollOption": "origin:item:slug:dizzying-colors",
+      "oldFiles": [
+        "animations_old\\spells\\1st\\dizzying-colors.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:electric-arc",
+      "oldFiles": [
+        "animations_old\\spells\\1st\\electric-arc.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:enfeeble",
+      "oldFiles": [
+        "animations_old\\spells\\1st\\enfeeble.json"
+      ]
+    },
+    {
+      "rollOption": "effect:evolution-surge",
+      "oldFiles": [
+        "animations_old\\spells\\1st\\evolution-surge.json"
+      ]
+    },
+    {
+      "rollOption": "origin:item:slug:faerie-dust",
+      "oldFiles": [
+        "animations_old\\spells\\1st\\faerie-dust.json"
+      ]
+    },
+    {
+      "rollOption": "effect:figment",
+      "oldFiles": [
+        "animations_old\\spells\\1st\\figment.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:force-barrage",
+      "oldFiles": [
+        "animations_old\\spells\\1st\\force-barrage.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:frostbite",
+      "oldFiles": [
+        "animations_old\\spells\\1st\\frostbite.json"
+      ]
+    },
+    {
+      "rollOption": "origin:item:slug:gale-blast",
+      "oldFiles": [
+        "animations_old\\spells\\1st\\gale-blast.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:gouging-claw",
+      "oldFiles": [
+        "animations_old\\spells\\1st\\gouging-claw.json"
+      ]
+    },
+    {
+      "rollOption": "origin:item:slug:grim-tendrils",
+      "oldFiles": [
+        "animations_old\\spells\\1st\\grim-tendrils.json"
+      ]
+    },
+    {
+      "rollOption": "effect:guidance",
+      "oldFiles": [
+        "animations_old\\spells\\1st\\guidance.json"
+      ]
+    },
+    {
+      "rollOption": "origin:item:slug:haunting-hymn",
+      "oldFiles": [
+        "animations_old\\spells\\1st\\haunting-hymn.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:heal-animal",
+      "oldFiles": [
+        "animations_old\\spells\\1st\\heal-animal.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:heal",
+      "oldFiles": [
+        "animations_old\\spells\\1st\\heal.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:ignition",
+      "oldFiles": [
+        "animations_old\\spells\\1st\\ignition.json"
+      ]
+    },
+    {
+      "rollOption": "effect:ill-omen",
+      "oldFiles": [
+        "animations_old\\spells\\1st\\ill-omen.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:imaginary-weapon",
+      "oldFiles": [
+        "animations_old\\spells\\1st\\imaginary-weapon.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:kinetic-ram",
+      "oldFiles": [
+        "animations_old\\spells\\1st\\kinetic-ram.json"
+      ]
+    },
+    {
+      "rollOption": "origin:item:slug:kinetic-ram",
+      "oldFiles": [
+        "animations_old\\spells\\1st\\kinetic-ram.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:lay-on-hands",
+      "oldFiles": [
+        "animations_old\\spells\\1st\\lay-on-hands.json"
+      ]
+    },
+    {
+      "rollOption": "effect:slug:spell-effect-light",
+      "oldFiles": [
+        "animations_old\\spells\\1st\\light.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:lose-the-path",
+      "oldFiles": [
+        "animations_old\\spells\\1st\\lose-the-path.json"
+      ]
+    },
+    {
+      "rollOption": "origin:item:slug:mushroom-patch",
+      "oldFiles": [
+        "animations_old\\spells\\1st\\mushroom-patch.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:needle-darts",
+      "oldFiles": [
+        "animations_old\\spells\\1st\\needle-darts.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:phase-bolt",
+      "oldFiles": [
+        "animations_old\\spells\\1st\\phase-bolt.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:produce-flame",
+      "oldFiles": [
+        "animations_old\\spells\\1st\\produce-flame.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:puff-of-poison",
+      "oldFiles": [
+        "animations_old\\spells\\1st\\puff-of-poison.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:ray-of-frost",
+      "oldFiles": [
+        "animations_old\\spells\\1st\\ray-of-frost.json"
+      ]
+    },
+    {
+      "rollOption": "spell:slug:read-aura",
+      "oldFiles": [
+        "animations_old\\spells\\1st\\read-aura.json"
+      ]
+    },
+    {
+      "rollOption": "effect:slug:spell-effect-rousing-splash",
+      "oldFiles": [
+        "animations_old\\spells\\1st\\rousing-splash.json"
+      ]
+    },
+    {
+      "rollOption": "origin:item:slug:scatter-scree",
+      "oldFiles": [
+        "animations_old\\spells\\1st\\scatter-scree.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:schadenfreude",
+      "oldFiles": [
+        "animations_old\\spells\\1st\\schadenfreude.json"
+      ]
+    },
+    {
+      "rollOption": "effect:spell-effect-shields-of-the-spirit-security",
+      "oldFiles": [
+        "animations_old\\spells\\1st\\shields-of-the-spirit.json"
+      ]
+    },
+    {
+      "rollOption": "spell:slug:sigil",
+      "oldFiles": [
+        "animations_old\\spells\\1st\\sigil.json"
+      ]
+    },
+    {
+      "rollOption": "item:slashing-gust",
+      "oldFiles": [
+        "animations_old\\spells\\1st\\slashing-gust.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:soothe",
+      "oldFiles": [
+        "animations_old\\spells\\1st\\soothe.json"
+      ]
+    },
+    {
+      "rollOption": "origin:item:slug:spout",
+      "oldFiles": [
+        "animations_old\\spells\\1st\\spout.json"
+      ]
+    },
+    {
+      "rollOption": "spell:stabilize",
+      "oldFiles": [
+        "animations_old\\spells\\1st\\stabilize.json"
+      ]
+    },
+    {
+      "rollOption": "effect:sure-strike",
+      "oldFiles": [
+        "animations_old\\spells\\1st\\sure-strike.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:telekinetic-projectile",
+      "oldFiles": [
+        "animations_old\\spells\\1st\\telekinetic-projectile.json"
+      ]
+    },
+    {
+      "rollOption": "origin:item:slug:telekinetic-rend",
+      "oldFiles": [
+        "animations_old\\spells\\1st\\telekinetic-rend.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:tempest-surge",
+      "oldFiles": [
+        "animations_old\\spells\\1st\\tempest-surge.json"
+      ]
+    },
+    {
+      "rollOption": "effect:slug:spell-effect-aura-triple-time",
+      "oldFiles": [
+        "animations_old\\spells\\1st\\triple-time.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:vitality-lash",
+      "oldFiles": [
+        "animations_old\\spells\\1st\\vitality-lash.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:void-warp",
+      "oldFiles": [
+        "animations_old\\spells\\1st\\void-warp.json"
+      ]
+    },
+    {
+      "rollOption": "effect:warp-step",
+      "oldFiles": [
+        "animations_old\\spells\\1st\\warp-step.json"
+      ]
+    },
+    {
+      "rollOption": "origin:item:slug:wildfire",
+      "oldFiles": [
+        "animations_old\\spells\\1st\\wildfire.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:blazing-bolt",
+      "oldFiles": [
+        "animations_old\\spells\\2nd\\blazing-bolt.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:blood-vendetta",
+      "oldFiles": [
+        "animations_old\\spells\\2nd\\blood-vendetta.json"
+      ]
+    },
+    {
+      "rollOption": "spell:slug:cleanse-affliction",
+      "oldFiles": [
+        "animations_old\\spells\\2nd\\cleanse-affliction.json"
+      ]
+    },
+    {
+      "rollOption": "spell:slug:clear-mind",
+      "oldFiles": [
+        "animations_old\\spells\\2nd\\clear-mind.json"
+      ]
+    },
+    {
+      "rollOption": "origin:item:slug:darkness",
+      "oldFiles": [
+        "animations_old\\spells\\2nd\\darkness.json"
+      ]
+    },
+    {
+      "rollOption": "effect:darkvision",
+      "oldFiles": [
+        "animations_old\\spells\\2nd\\darkvision.json"
+      ]
+    },
+    {
+      "rollOption": "effect:darkvision-24-hours",
+      "oldFiles": [
+        "animations_old\\spells\\2nd\\darkvision.json"
+      ]
+    },
+    {
+      "rollOption": "effect:false-vitality",
+      "oldFiles": [
+        "animations_old\\spells\\2nd\\false-vitality.json"
+      ]
+    },
+    {
+      "rollOption": "origin:item:slug:floating-flame",
+      "oldFiles": [
+        "animations_old\\spells\\2nd\\floating-flame.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:grease",
+      "oldFiles": [
+        "animations_old\\spells\\2nd\\grease.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:harmonize-self",
+      "oldFiles": [
+        "animations_old\\spells\\2nd\\harmonize-self.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:heat-metal",
+      "oldFiles": [
+        "animations_old\\spells\\2nd\\heat-metal.json"
+      ]
+    },
+    {
+      "rollOption": "origin:item:slug:inner-radiance-torrent",
+      "oldFiles": [
+        "animations_old\\spells\\2nd\\inner-radiance-torrent.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:laughing-fit",
+      "oldFiles": [
+        "animations_old\\spells\\2nd\\laughing-fit.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:paranoia",
+      "oldFiles": [
+        "animations_old\\spells\\2nd\\paranoia.json"
+      ]
+    },
+    {
+      "rollOption": "origin:item:slug:powerful-inhalation",
+      "oldFiles": [
+        "animations_old\\spells\\2nd\\powerful-inhalation.json"
+      ]
+    },
+    {
+      "rollOption": "effect:resist-energy",
+      "oldFiles": [
+        "animations_old\\spells\\2nd\\resist-energy.json"
+      ]
+    },
+    {
+      "rollOption": "origin:item:slug:revealing-light",
+      "oldFiles": [
+        "animations_old\\spells\\2nd\\revealing-light.json"
+      ]
+    },
+    {
+      "rollOption": "effect:see-the-unseen",
+      "oldFiles": [
+        "animations_old\\spells\\2nd\\see-the-unseen.json"
+      ]
+    },
+    {
+      "rollOption": "spell:slug:sound-body",
+      "oldFiles": [
+        "animations_old\\spells\\2nd\\sound-body.json"
+      ]
+    },
+    {
+      "rollOption": "spell:slug:translate",
+      "oldFiles": [
+        "animations_old\\spells\\2nd\\translate.json"
+      ]
+    },
+    {
+      "rollOption": "spell:slug:water-breathing",
+      "oldFiles": [
+        "animations_old\\spells\\2nd\\water-breathing.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:worms-repast",
+      "oldFiles": [
+        "animations_old\\spells\\2nd\\worms-repast.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:combustion",
+      "oldFiles": [
+        "animations_old\\spells\\3rd\\combustion.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:earthbind",
+      "oldFiles": [
+        "animations_old\\spells\\3rd\\earthbind.json"
+      ]
+    },
+    {
+      "rollOption": "effect:heroism",
+      "oldFiles": [
+        "animations_old\\spells\\3rd\\heroism.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:holy-light",
+      "oldFiles": [
+        "animations_old\\spells\\3rd\\holy-light.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:magnetic-acceleration",
+      "oldFiles": [
+        "animations_old\\spells\\3rd\\magnetic-acceleration.json"
+      ]
+    },
+    {
+      "rollOption": "effect:sand-form",
+      "oldFiles": [
+        "animations_old\\spells\\3rd\\sand-form.json"
+      ]
+    },
+    {
+      "rollOption": "item:slow",
+      "oldFiles": [
+        "animations_old\\spells\\3rd\\slow.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:bloodspray-curse",
+      "oldFiles": [
+        "animations_old\\spells\\4th\\bloodspray-curse.json"
+      ]
+    },
+    {
+      "rollOption": "origin:item:slug:cinder-swarm",
+      "oldFiles": [
+        "animations_old\\spells\\4th\\cinder-swarm.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:confusion",
+      "oldFiles": [
+        "animations_old\\spells\\4th\\confusion.json"
+      ]
+    },
+    {
+      "rollOption": "origin:item:slug:divine-wrath",
+      "oldFiles": [
+        "animations_old\\spells\\4th\\divine-wrath.json"
+      ]
+    },
+    {
+      "rollOption": "effect:fire-shield",
+      "oldFiles": [
+        "animations_old\\spells\\4th\\fire-shield.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:vision-of-death",
+      "oldFiles": [
+        "animations_old\\spells\\4th\\vision-of-death.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:ymeris-mark",
+      "oldFiles": [
+        "animations_old\\spells\\4th\\ymeris-mark.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:breath-of-life",
+      "oldFiles": [
+        "animations_old\\spells\\5th\\breath-of-life.json"
+      ]
+    },
+    {
+      "rollOption": "origin:item:slug:cone-of-cold",
+      "oldFiles": [
+        "animations_old\\spells\\5th\\cone-of-cold.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:cone-of-cold",
+      "oldFiles": [
+        "animations_old\\spells\\5th\\cone-of-cold.json"
+      ]
+    },
+    {
+      "rollOption": "origin:item:slug:entwined-roots",
+      "oldFiles": [
+        "animations_old\\spells\\5th\\entwined-roots.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:flames-of-ego",
+      "oldFiles": [
+        "animations_old\\spells\\5th\\flames-of-ego.json"
+      ]
+    },
+    {
+      "rollOption": "origin:item:slug:flammable-fumes",
+      "oldFiles": [
+        "animations_old\\spells\\5th\\flammable-fumes.json"
+      ]
+    },
+    {
+      "rollOption": "origin:item:slug:freezing-rain",
+      "oldFiles": [
+        "animations_old\\spells\\5th\\freezing-rain.json"
+      ]
+    },
+    {
+      "rollOption": "origin:item:slug:howling-blizzard",
+      "oldFiles": [
+        "animations_old\\spells\\5th\\howling-blizzard.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:howling-blizzard",
+      "oldFiles": [
+        "animations_old\\spells\\5th\\howling-blizzard.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:impaling-spike",
+      "oldFiles": [
+        "animations_old\\spells\\5th\\impaling-spike.json"
+      ]
+    },
+    {
+      "rollOption": "origin:item:slug:pressure-zone",
+      "oldFiles": [
+        "animations_old\\spells\\5th\\pressure-zone.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:synesthesia",
+      "oldFiles": [
+        "animations_old\\spells\\5th\\synesthesia.json"
+      ]
+    },
+    {
+      "rollOption": "origin:item:slug:toxic-cloud",
+      "oldFiles": [
+        "animations_old\\spells\\5th\\toxic-cloud.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:chain-lightning",
+      "oldFiles": [
+        "animations_old\\spells\\6th\\chain-lightning.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:disintegrate",
+      "oldFiles": [
+        "animations_old\\spells\\6th\\disintegrate.json"
+      ]
+    },
+    {
+      "rollOption": "origin:item:slug:flame-vortex",
+      "oldFiles": [
+        "animations_old\\spells\\6th\\flame-vortex.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:spirit-blast",
+      "oldFiles": [
+        "animations_old\\spells\\6th\\spirit-blast.json"
+      ]
+    },
+    {
+      "rollOption": "effect:fiery-body",
+      "oldFiles": [
+        "animations_old\\spells\\7th\\fiery-body.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:polar-ray",
+      "oldFiles": [
+        "animations_old\\spells\\8th\\polar-ray.json"
+      ]
+    },
+    {
+      "rollOption": "origin:item:slug:falling-stars",
+      "oldFiles": [
+        "animations_old\\spells\\9th\\falling-stars.json"
+      ]
+    },
+    {
+      "rollOption": "item:base:butterfly-sword",
+      "oldFiles": [
+        "animations_old\\weapons\\base\\butterfly-sword.json"
+      ]
+    },
+    {
+      "rollOption": "item:base:chain-sword",
+      "oldFiles": [
+        "animations_old\\weapons\\base\\chain-sword.json"
+      ]
+    },
+    {
+      "rollOption": "item:base:rapier",
+      "oldFiles": [
+        "animations_old\\weapons\\base\\rapier.json"
+      ]
+    },
+    {
+      "rollOption": "item:base:shield-boss",
+      "oldFiles": [
+        "animations_old\\weapons\\base\\shield-boss.json"
+      ]
+    },
+    {
+      "rollOption": "item:base:shield-spikes",
+      "oldFiles": [
+        "animations_old\\weapons\\base\\shield-spikes.json"
+      ]
+    },
+    {
+      "rollOption": "item:group:bomb",
+      "oldFiles": [
+        "animations_old\\weapons\\group\\bomb.json"
+      ]
+    },
+    {
+      "rollOption": "item:group:brawling",
+      "oldFiles": [
+        "animations_old\\weapons\\group\\brawling.json"
+      ]
+    },
+    {
+      "rollOption": "item:group:crossbow",
+      "oldFiles": [
+        "animations_old\\weapons\\group\\crossbow.json"
+      ]
+    },
+    {
+      "rollOption": "item:group:dart",
+      "oldFiles": [
+        "animations_old\\weapons\\group\\dart.json"
+      ]
+    },
+    {
+      "rollOption": "item:group:firearm",
+      "oldFiles": [
+        "animations_old\\weapons\\group\\firearm.json"
+      ]
+    },
+    {
+      "rollOption": "item:group:flail",
+      "oldFiles": [
+        "animations_old\\weapons\\group\\flail.json"
+      ]
+    },
+    {
+      "rollOption": "item:group:hammer",
+      "oldFiles": [
+        "animations_old\\weapons\\group\\hammer.json"
+      ]
+    },
+    {
+      "rollOption": "item:group:knife",
+      "oldFiles": [
+        "animations_old\\weapons\\group\\knife.json"
+      ]
+    },
+    {
+      "rollOption": "item:group:pick",
+      "oldFiles": [
+        "animations_old\\weapons\\group\\pick.json"
+      ]
+    },
+    {
+      "rollOption": "item:group:shield",
+      "oldFiles": [
+        "animations_old\\weapons\\group\\shield.json"
+      ]
+    },
+    {
+      "rollOption": "item:group:sling",
+      "oldFiles": [
+        "animations_old\\weapons\\group\\sling.json"
+      ]
+    },
+    {
+      "rollOption": "item:group:spear",
+      "oldFiles": [
+        "animations_old\\weapons\\group\\spear.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:acid-flask-major",
+      "oldFiles": [
+        "animations_old\\weapons\\slug\\acid-flask.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:acid-flask-greater",
+      "oldFiles": [
+        "animations_old\\weapons\\slug\\acid-flask.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:acid-flask-moderate",
+      "oldFiles": [
+        "animations_old\\weapons\\slug\\acid-flask.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:acid-flask-lesser",
+      "oldFiles": [
+        "animations_old\\weapons\\slug\\acid-flask.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:alchemists-fire-major",
+      "oldFiles": [
+        "animations_old\\weapons\\slug\\alchemists-fire.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:alchemists-fire-greater",
+      "oldFiles": [
+        "animations_old\\weapons\\slug\\alchemists-fire.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:alchemists-fire-moderate",
+      "oldFiles": [
+        "animations_old\\weapons\\slug\\alchemists-fire.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:alchemists-fire-lesser",
+      "oldFiles": [
+        "animations_old\\weapons\\slug\\alchemists-fire.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:blight-bomb-major",
+      "oldFiles": [
+        "animations_old\\weapons\\slug\\blight-bomb.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:blight-bomb-greater",
+      "oldFiles": [
+        "animations_old\\weapons\\slug\\blight-bomb.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:blight-bomb-moderate",
+      "oldFiles": [
+        "animations_old\\weapons\\slug\\blight-bomb.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:blight-bomb-lesser",
+      "oldFiles": [
+        "animations_old\\weapons\\slug\\blight-bomb.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:bottled-lightning-major",
+      "oldFiles": [
+        "animations_old\\weapons\\slug\\bottled-lightning.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:bottled-lightning-greater",
+      "oldFiles": [
+        "animations_old\\weapons\\slug\\bottled-lightning.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:bottled-lightning-moderate",
+      "oldFiles": [
+        "animations_old\\weapons\\slug\\bottled-lightning.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:bottled-lightning-lesser",
+      "oldFiles": [
+        "animations_old\\weapons\\slug\\bottled-lightning.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:claw",
+      "oldFiles": [
+        "animations_old\\weapons\\slug\\claws.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:claws",
+      "oldFiles": [
+        "animations_old\\weapons\\slug\\claws.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:dread-ampoule-major",
+      "oldFiles": [
+        "animations_old\\weapons\\slug\\dread-ampoule.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:dread-ampoule-greater",
+      "oldFiles": [
+        "animations_old\\weapons\\slug\\dread-ampoule.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:dread-ampoule-moderate",
+      "oldFiles": [
+        "animations_old\\weapons\\slug\\dread-ampoule.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:dread-ampoule-lesser",
+      "oldFiles": [
+        "animations_old\\weapons\\slug\\dread-ampoule.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:frost-vial-major",
+      "oldFiles": [
+        "animations_old\\weapons\\slug\\frost-vial.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:frost-vial-greater",
+      "oldFiles": [
+        "animations_old\\weapons\\slug\\frost-vial.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:frost-vial-moderate",
+      "oldFiles": [
+        "animations_old\\weapons\\slug\\frost-vial.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:frost-vial-lesser",
+      "oldFiles": [
+        "animations_old\\weapons\\slug\\frost-vial.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:glue-bomb-major",
+      "oldFiles": [
+        "animations_old\\weapons\\slug\\glue-bomb.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:glue-bomb-greater",
+      "oldFiles": [
+        "animations_old\\weapons\\slug\\glue-bomb.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:glue-bomb-moderate",
+      "oldFiles": [
+        "animations_old\\weapons\\slug\\glue-bomb.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:glue-bomb-lesser",
+      "oldFiles": [
+        "animations_old\\weapons\\slug\\glue-bomb.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:horn",
+      "oldFiles": [
+        "animations_old\\weapons\\slug\\horn.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:jaw",
+      "oldFiles": [
+        "animations_old\\weapons\\slug\\jaws.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:jaws",
+      "oldFiles": [
+        "animations_old\\weapons\\slug\\jaws.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:tail",
+      "oldFiles": [
+        "animations_old\\weapons\\slug\\tail.json"
+      ]
+    },
+    {
+      "rollOption": "item:slug:trident",
+      "oldFiles": [
+        "animations_old\\weapons\\slug\\trident.json"
+      ]
+    }
+  ],
+  "existing": [
+    {
+      "rollOption": "condition:immobilized",
+      "oldFiles": [
+        "animations_old\\conditions\\immobolized.json"
+      ],
+      "newFiles": [
+        "animations\\conditions\\immobilized.json"
+      ]
+    }
+  ],
+  "summary": {
+    "totalOldRollOptions": 245,
+    "totalNewRollOptions": 22,
+    "missingCount": 244,
+    "existingCount": 1
+  }
+}

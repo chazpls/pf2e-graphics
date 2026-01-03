@@ -1,0 +1,68 @@
+{
+	"action:administer-first-aid": [
+		{
+			"triggers": [
+				"skill-check"
+			],
+			"execute": {
+				"type": "graphic",
+				"graphic": [
+					"jb2a.healing_generic.200px.blue"
+				],
+				"position": {
+					"type": "dynamic",
+					"location": "TARGETS"
+				},
+				"size": {
+					"type": "relative",
+					"relativeTo": "SOURCES",
+					"scaling": 1.5
+				},
+				"fadeIn": {
+					"duration": 250
+				},
+				"fadeOut": {
+					"duration": 250
+				}
+			},
+			"contents": [
+				{
+					"predicates": [
+						"action:administer-first-aid:stabilize"
+					]
+				},
+				{
+					"predicates": [
+						"action:administer-first-aid:stop-bleeding"
+					],
+					"contents": [
+						{
+							"predicates": [
+								"jb2a:patreon"
+							],
+							"execute": {
+								"type": "graphic",
+								"graphic": [
+									"jb2a.healing_generic.200px.red"
+								],
+								"position": {
+									"type": "dynamic",
+									"location": "SOURCES"
+								},
+								"size": {
+									"type": "relative",
+									"relativeTo": "SOURCES"
+								}
+							}
+						},
+						{
+							"predicates": [
+								"jb2a:free"
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

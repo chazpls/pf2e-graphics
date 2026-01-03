@@ -1,0 +1,24 @@
+{
+	"action:seek": [
+		{
+			"triggers": [
+				"perception-check"
+			],
+			"execute": {
+				"type": "graphic",
+				"graphic": [
+					"jb2a.eyes.01.dark_green.single"
+				],
+				"position": {
+					"type": "dynamic",
+					"location": "SOURCES"
+				},
+				"size": {
+					"type": "relative",
+					"relativeTo": "SOURCES",
+					"scaling": 1.5
+				}
+			}
+		}
+	]
+}

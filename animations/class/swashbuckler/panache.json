@@ -1,0 +1,103 @@
+{
+	"effect:panache": [
+		{
+			"triggers": [
+				"effect"
+			],
+			"execute": {
+				"type": "graphic",
+				"graphic": [
+					"jb2a.shield.01.complete.01"
+				],
+				"position": {
+					"type": "dynamic",
+					"location": "SOURCES"
+				},
+				"size": {
+					"type": "relative",
+					"relativeTo": "SOURCES"
+				}
+			},
+			"contents": [
+				{
+					"execute": {
+						"type": "graphic",
+						"graphic": [
+							"jb2a.shimmer.01.blue"
+						],
+						"position": {
+							"type": "dynamic",
+							"location": "SOURCES"
+						},
+						"size": {
+							"type": "relative",
+							"relativeTo": "SOURCES"
+						},
+						"waitUntilFinished": -100,
+						"filters": [
+							{
+								"type": "ColorMatrix",
+								"options": {
+									"hue": -165
+								}
+							}
+						],
+						"tieToDocuments": true
+					}
+				},
+				{
+					"predicates": [
+						{
+							"gte": [
+								"settings:quality",
+								1
+							]
+						}
+					],
+					"execute": {
+						"type": "graphic",
+						"graphic": [
+							"jb2a.token_border.circle.spinning.blue.001"
+						],
+						"position": {
+							"type": "dynamic",
+							"location": "SOURCES"
+						},
+						"size": {
+							"type": "relative",
+							"relativeTo": "SOURCES",
+							"scaling": 1.6
+						},
+						"filters": [
+							{
+								"type": "ColorMatrix",
+								"options": {
+									"hue": -165
+								}
+							}
+						]
+					},
+					"contents": [
+						{
+							"predicates": [
+								"settings:persistent"
+							],
+							"execute": {
+								"type": "graphic",
+								"tieToDocuments": true,
+								"persistent": "tokenPrototype"
+							}
+						},
+						{
+							"triggers": [
+								"effect",
+								"start-turn"
+							],
+							"default": true
+						}
+					]
+				}
+			]
+		}
+	]
+}

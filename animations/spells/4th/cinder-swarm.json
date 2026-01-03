@@ -1,0 +1,38 @@
+{
+	"origin:item:slug:cinder-swarm": [
+		{
+			"triggers": [
+				"place-template"
+			],
+			"execute": {
+				"type": "graphic",
+				"graphic": [
+					"jb2a.fire_ring.500px.red"
+				],
+				"position": {
+					"type": "dynamic",
+					"location": "TEMPLATES"
+				},
+				"size": {
+					"type": "directed",
+					"endpoint": "TEMPLATES"
+				}
+			},
+			"contents": [
+				{
+					"default": true
+				},
+				{
+					"predicates": [
+						"settings:persistent"
+					],
+					"execute": {
+						"type": "graphic",
+						"tieToDocuments": true,
+						"persistent": "tokenPrototype"
+					}
+				}
+			]
+		}
+	]
+}

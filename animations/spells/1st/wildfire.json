@@ -1,0 +1,41 @@
+{
+	"origin:item:slug:wildfire": [
+		{
+			"triggers": [
+				"place-template"
+			],
+			"execute": {
+				"type": "graphic",
+				"graphic": [
+					"jb2a.ground_cracks.orange.02"
+				],
+				"position": {
+					"type": "dynamic",
+					"location": "TEMPLATES"
+				},
+				"size": {
+					"type": "relative",
+					"relativeTo": "SOURCES",
+					"scaling": 1.1
+				}
+			},
+			"contents": [
+				{
+					"predicates": [
+						{
+							"gte": [
+								"settings:quality",
+								1
+							]
+						}
+					]
+				},
+				{
+					"predicates": [
+						"settings:persistent"
+					]
+				}
+			]
+		}
+	]
+}

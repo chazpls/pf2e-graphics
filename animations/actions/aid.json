@@ -1,0 +1,136 @@
+{
+	"effect:aid": [
+		{
+			"triggers": [
+				"effect"
+			],
+			"execute": {
+				"type": "graphic",
+				"graphic": [
+					"jb2a.shield.01.complete.01"
+				],
+				"position": {
+					"type": "dynamic",
+					"location": "SOURCES"
+				},
+				"size": {
+					"type": "relative",
+					"relativeTo": "SOURCES",
+					"scaling": 2
+				},
+				"fadeIn": {
+					"duration": 250
+				},
+				"fadeOut": {
+					"duration": 250
+				}
+			},
+			"contents": [
+				{
+					"default": true,
+					"execute": {
+						"type": "graphic",
+						"graphic": [
+							"jb2a.condition.boon.01.005.green"
+						],
+						"position": {
+							"type": "dynamic",
+							"location": "SOURCES"
+						},
+						"size": {
+							"type": "relative",
+							"relativeTo": "SOURCES"
+						}
+					}
+				},
+				{
+					"predicates": [
+						"effect:rule-selection:aid-bonus:-1"
+					],
+					"execute": {
+						"type": "graphic",
+						"graphic": [
+							"jb2a.condition.curse.01.004.red"
+						],
+						"position": {
+							"type": "dynamic",
+							"location": "SOURCES"
+						},
+						"size": {
+							"type": "relative",
+							"relativeTo": "SOURCES"
+						}
+					}
+				}
+			]
+		}
+	],
+	"self:effect:aid": [
+		{
+			"triggers": [
+				"modifiers-matter"
+			],
+			"execute": {
+				"type": "graphic",
+				"graphic": [
+					"jb2a.shield.01.complete.01"
+				],
+				"position": {
+					"type": "dynamic",
+					"location": "SOURCES"
+				},
+				"size": {
+					"type": "relative",
+					"relativeTo": "SOURCES",
+					"scaling": 2
+				},
+				"fadeIn": {
+					"duration": 250
+				},
+				"fadeOut": {
+					"duration": 250
+				}
+			},
+			"contents": [
+				{
+					"predicates": [
+						"significance:essential"
+					],
+					"execute": {
+						"type": "graphic",
+						"graphic": [
+							"jb2a.condition.boon.01.005.green"
+						],
+						"position": {
+							"type": "dynamic",
+							"location": "SOURCES"
+						},
+						"size": {
+							"type": "relative",
+							"relativeTo": "SOURCES"
+						}
+					}
+				},
+				{
+					"predicates": [
+						"significance:detrimental"
+					],
+					"execute": {
+						"type": "graphic",
+						"graphic": [
+							"jb2a.condition.curse.01.004.red"
+						],
+						"position": {
+							"type": "dynamic",
+							"location": "SOURCES"
+						},
+						"size": {
+							"type": "relative",
+							"relativeTo": "SOURCES"
+						}
+					}
+				}
+			]
+		}
+	]
+}

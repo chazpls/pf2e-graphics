@@ -1,0 +1,83 @@
+{
+	"item:slug:diabolic-quill": [
+		{
+			"triggers": [
+				"attack-roll",
+				"action"
+			],
+			"execute": {
+				"type": "graphic",
+				"graphic": [
+					"jb2a.melee_attack.02.handaxe.01"
+				],
+				"position": {
+					"type": "static",
+					"location": "SOURCES",
+					"anchor": {
+						"x": 0.4
+					}
+				},
+				"reflection": {
+					"y": "random"
+				},
+				"size": {
+					"type": "relative",
+					"relativeTo": "SOURCES",
+					"scaling": 5
+				},
+				"rotation": {
+					"type": "relative",
+					"location": "TARGETS"
+				}
+			},
+			"contents": [
+				{
+					"predicates": [
+						"jb2a:patreon"
+					],
+					"execute": {
+						"type": "graphic",
+						"graphic": [
+							"jb2a.template_line_piercing.void.01.purple"
+						],
+						"position": {
+							"type": "dynamic",
+							"location": "SOURCES"
+						},
+						"size": {
+							"type": "relative",
+							"relativeTo": "SOURCES"
+						}
+					}
+				},
+				{
+					"predicates": [
+						"jb2a:free"
+					],
+					"execute": {
+						"type": "graphic",
+						"graphic": [
+							"jb2a.template_line_piercing.generic.01.orange"
+						],
+						"position": {
+							"type": "dynamic",
+							"location": "SOURCES"
+						},
+						"size": {
+							"type": "relative",
+							"relativeTo": "SOURCES"
+						},
+						"filters": [
+							{
+								"type": "ColorMatrix",
+								"options": {
+									"hue": -110
+								}
+							}
+						]
+					}
+				}
+			]
+		}
+	]
+}

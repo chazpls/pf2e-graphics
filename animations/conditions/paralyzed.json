@@ -1,0 +1,56 @@
+{
+	"condition:paralyzed": [
+		{
+			"predicates": [
+				{
+					"gte": [
+						"settings:quality",
+						1
+					]
+				}
+			],
+			"execute": {
+				"type": "graphic",
+				"graphic": [
+					"jb2a.static_electricity.03.blue"
+				],
+				"position": {
+					"type": "dynamic",
+					"location": "SOURCES"
+				},
+				"size": {
+					"type": "relative",
+					"relativeTo": "SOURCES"
+				},
+				"fadeIn": {
+					"duration": 250
+				},
+				"fadeOut": {
+					"duration": 500
+				}
+			},
+			"contents": [
+				{
+					"triggers": [
+						"start-turn",
+						"effect"
+					],
+					"default": true
+				},
+				{
+					"triggers": [
+						"effect"
+					],
+					"predicates": [
+						"settings:persistent"
+					],
+					"execute": {
+						"type": "graphic",
+						"tieToDocuments": true,
+						"persistent": "tokenPrototype"
+					}
+				}
+			]
+		}
+	]
+}

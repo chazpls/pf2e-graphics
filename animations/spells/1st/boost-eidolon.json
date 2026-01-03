@@ -1,0 +1,47 @@
+{
+	"effect:boost-eidolon": [
+		{
+			"predicates": [
+				{
+					"gte": [
+						"settings:quality",
+						1
+					]
+				}
+			],
+			"execute": {
+				"type": "graphic",
+				"graphic": [
+					"jb2a.energy_wall.01.circle.500x500.01.complete"
+				],
+				"position": {
+					"type": "dynamic",
+					"location": "SOURCES"
+				},
+				"size": {
+					"type": "relative",
+					"relativeTo": "SOURCES"
+				}
+			},
+			"contents": [
+				{
+					"predicates": [
+						"settings:persistent"
+					],
+					"execute": {
+						"type": "graphic",
+						"tieToDocuments": true,
+						"persistent": "tokenPrototype"
+					}
+				},
+				{
+					"triggers": [
+						"effect",
+						"start-turn"
+					],
+					"default": true
+				}
+			]
+		}
+	]
+}

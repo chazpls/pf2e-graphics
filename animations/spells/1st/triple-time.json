@@ -1,0 +1,24 @@
+{
+	"effect:slug:spell-effect-aura-triple-time": [
+		{
+			"triggers": [
+				"effect"
+			],
+			"execute": {
+				"type": "graphic",
+				"graphic": [
+					"jb2a.bardic_inspiration"
+				],
+				"position": {
+					"type": "dynamic",
+					"location": "SOURCES"
+				},
+				"size": {
+					"type": "relative",
+					"relativeTo": "SOURCES",
+					"scaling": 5
+				}
+			}
+		}
+	]
+}

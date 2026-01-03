@@ -1,0 +1,45 @@
+{
+	"action:drain-bonded-item": [
+		{
+			"triggers": [
+				"action"
+			],
+			"contents": [
+				{
+					"execute": {
+						"type": "sound",
+						"sound": [
+							"graphics-sfx.magic.buff.generic.{01,02,03,04,05}"
+						],
+						"delay": 500
+					}
+				},
+				{
+					"execute": {
+						"type": "graphic",
+						"graphic": [
+							"jb2a.divine_smite.caster.blueyellow"
+						],
+						"position": {
+							"type": "dynamic",
+							"location": "SOURCES"
+						},
+						"size": {
+							"type": "relative",
+							"relativeTo": "SOURCES",
+							"scaling": 1.5
+						},
+						"filters": [
+							{
+								"type": "ColorMatrix",
+								"options": {
+									"hue": 160
+								}
+							}
+						]
+					}
+				}
+			]
+		}
+	]
+}

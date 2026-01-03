@@ -1,0 +1,38 @@
+{
+	"item:slug:flying-flame": [
+		{
+			"triggers": [
+				"damage-roll"
+			],
+			"contents": [
+				{
+					"label": "SFX Flying Flame",
+					"execute": {
+						"type": "sound",
+						"sound": [
+							"graphics-sfx.magic.fire.cast.single.02"
+						],
+						"delay": 200
+					}
+				},
+				{
+					"execute": {
+						"type": "graphic",
+						"graphic": [
+							"jb2a.pack_hound_missile.blue.01"
+						],
+						"position": {
+							"type": "static",
+							"location": "SOURCES"
+						},
+						"size": {
+							"type": "directed",
+							"endpoint": "TARGETS"
+						},
+						"waitUntilFinished": -3300
+					}
+				}
+			]
+		}
+	]
+}

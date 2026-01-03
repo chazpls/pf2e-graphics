@@ -1,0 +1,114 @@
+{
+	"origin:item:slug:dizzying-colors": [
+		{
+			"triggers": [
+				"place-template"
+			],
+			"execute": {
+				"type": "graphic",
+				"graphic": [
+					"jb2a.burning_hands.01.orange"
+				],
+				"position": {
+					"type": "dynamic",
+					"location": "TEMPLATES"
+				},
+				"size": {
+					"type": "directed",
+					"endpoint": "TEMPLATES"
+				}
+			},
+			"contents": [
+				{
+					"execute": {
+						"type": "graphic",
+						"graphic": [
+							"jb2a.breath_weapons.cold.cone.blue"
+						],
+						"position": {
+							"type": "dynamic",
+							"location": "SOURCES"
+						},
+						"size": {
+							"type": "relative",
+							"relativeTo": "SOURCES"
+						},
+						"rotation": {
+							"type": "absolute",
+							"angle": -20
+						}
+					}
+				},
+				{
+					"predicates": [
+						"jb2a:patreon"
+					],
+					"execute": {
+						"type": "graphic",
+						"graphic": [
+							"jb2a.breath_weapons.cold.cone.green"
+						],
+						"position": {
+							"type": "dynamic",
+							"location": "SOURCES"
+						},
+						"size": {
+							"type": "relative",
+							"relativeTo": "SOURCES"
+						},
+						"rotation": {
+							"type": "absolute",
+							"angle": -10
+						}
+					}
+				},
+				{
+					"predicates": [
+						"jb2a:patreon"
+					],
+					"execute": {
+						"type": "graphic",
+						"graphic": [
+							"jb2a.breath_weapons.cold.cone.orange"
+						],
+						"position": {
+							"type": "dynamic",
+							"location": "SOURCES"
+						},
+						"size": {
+							"type": "relative",
+							"relativeTo": "SOURCES"
+						},
+						"rotation": {
+							"type": "absolute",
+							"angle": 10
+						}
+					}
+				},
+				{
+					"predicates": [
+						"jb2a:patreon"
+					],
+					"execute": {
+						"type": "graphic",
+						"graphic": [
+							"jb2a.breath_weapons.cold.cone.purple"
+						],
+						"position": {
+							"type": "dynamic",
+							"location": "SOURCES"
+						},
+						"size": {
+							"type": "relative",
+							"relativeTo": "SOURCES"
+						},
+						"rotation": {
+							"type": "absolute",
+							"angle": 20
+						}
+					}
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,215 @@
+{
+  "automated": [],
+  "manual": [
+    "animations_old\\add-ons\\casting-spell.json",
+    "animations_old\\archetypes\\marshal\\marshals-aura.json",
+    "animations_old\\class\\barbarian\\rage.json",
+    "animations_old\\class\\investigator\\strategic-strike.json",
+    "animations_old\\class\\kineticist\\elemental-blast.json",
+    "animations_old\\class\\kineticist\\kinetic-aura.json",
+    "animations_old\\class\\oracle\\nudge-the-scales.json",
+    "animations_old\\class\\psychic\\unleash-psyche.json",
+    "animations_old\\class\\swashbuckler\\bleeding-finisher.json",
+    "animations_old\\class\\swashbuckler\\confident-finisher.json",
+    "animations_old\\conditions\\doomed.json",
+    "animations_old\\conditions\\drained.json",
+    "animations_old\\conditions\\dying.json",
+    "animations_old\\conditions\\encumbered.json",
+    "animations_old\\conditions\\enfeebled.json",
+    "animations_old\\conditions\\fatigued.json",
+    "animations_old\\conditions\\frightened.json",
+    "animations_old\\conditions\\off-guard.json",
+    "animations_old\\conditions\\prone.json",
+    "animations_old\\conditions\\quickened.json",
+    "animations_old\\conditions\\sickened.json",
+    "animations_old\\conditions\\slowed.json",
+    "animations_old\\conditions\\stunned.json",
+    "animations_old\\conditions\\stupefied.json",
+    "animations_old\\conditions\\unconscious.json",
+    "animations_old\\conditions\\wounded.json",
+    "animations_old\\feats\\trap-finder.json",
+    "animations_old\\spells\\1st\\breathe-fire.json",
+    "animations_old\\spells\\1st\\cornucopia.json",
+    "animations_old\\spells\\1st\\haunting-hymn.json",
+    "animations_old\\spells\\1st\\ignition.json",
+    "animations_old\\spells\\1st\\kinetic-ram.json",
+    "animations_old\\spells\\1st\\lose-the-path.json",
+    "animations_old\\spells\\1st\\needle-darts.json",
+    "animations_old\\spells\\1st\\warp-step.json",
+    "animations_old\\spells\\2nd\\false-vitality.json",
+    "animations_old\\spells\\2nd\\grease.json",
+    "animations_old\\spells\\3rd\\sand-form.json",
+    "animations_old\\spells\\3rd\\slow.json",
+    "animations_old\\spells\\5th\\entwined-roots.json",
+    "animations_old\\spells\\5th\\flames-of-ego.json",
+    "animations_old\\spells\\5th\\flammable-fumes.json",
+    "animations_old\\spells\\5th\\howling-blizzard.json",
+    "animations_old\\spells\\6th\\disintegrate.json",
+    "animations_old\\spells\\6th\\flame-vortex.json",
+    "animations_old\\spells\\7th\\fiery-body.json"
+  ],
+  "reasons": {
+    "animations_old\\add-ons\\casting-spell.json": [
+      "Custom option: missed",
+      "Custom option: addon"
+    ],
+    "animations_old\\archetypes\\marshal\\marshals-aura.json": [
+      "Custom option: tint",
+      "Custom option: filter",
+      "Custom option: mask",
+      "Custom option: rotate",
+      "Custom option: duration"
+    ],
+    "animations_old\\class\\barbarian\\rage.json": [
+      "Deeply nested contents (>2 levels)"
+    ],
+    "animations_old\\class\\investigator\\strategic-strike.json": [
+      "Custom option: filter"
+    ],
+    "animations_old\\class\\kineticist\\elemental-blast.json": [
+      "Deeply nested contents (>2 levels)"
+    ],
+    "animations_old\\class\\kineticist\\kinetic-aura.json": [
+      "Custom option: size"
+    ],
+    "animations_old\\class\\oracle\\nudge-the-scales.json": [
+      "Custom option: randomizeMirrorY"
+    ],
+    "animations_old\\class\\psychic\\unleash-psyche.json": [
+      "Deeply nested contents (>2 levels)"
+    ],
+    "animations_old\\class\\swashbuckler\\bleeding-finisher.json": [
+      "Custom option: belowTokens"
+    ],
+    "animations_old\\class\\swashbuckler\\confident-finisher.json": [
+      "Custom option: filter"
+    ],
+    "animations_old\\conditions\\doomed.json": [
+      "Custom option: remove"
+    ],
+    "animations_old\\conditions\\drained.json": [
+      "Custom option: remove",
+      "Custom option: filter"
+    ],
+    "animations_old\\conditions\\dying.json": [
+      "Custom option: remove",
+      "Custom option: filter"
+    ],
+    "animations_old\\conditions\\encumbered.json": [
+      "Custom option: mask"
+    ],
+    "animations_old\\conditions\\enfeebled.json": [
+      "Custom option: remove"
+    ],
+    "animations_old\\conditions\\fatigued.json": [
+      "Custom option: mask",
+      "Custom option: filter"
+    ],
+    "animations_old\\conditions\\frightened.json": [
+      "Custom option: remove"
+    ],
+    "animations_old\\conditions\\off-guard.json": [
+      "Custom option: filter"
+    ],
+    "animations_old\\conditions\\prone.json": [
+      "Custom option: mask",
+      "Custom option: rotate"
+    ],
+    "animations_old\\conditions\\quickened.json": [
+      "Custom option: opacity"
+    ],
+    "animations_old\\conditions\\sickened.json": [
+      "Custom option: remove"
+    ],
+    "animations_old\\conditions\\slowed.json": [
+      "Custom option: remove"
+    ],
+    "animations_old\\conditions\\stunned.json": [
+      "Custom option: remove",
+      "Custom option: filter"
+    ],
+    "animations_old\\conditions\\stupefied.json": [
+      "Custom option: remove"
+    ],
+    "animations_old\\conditions\\unconscious.json": [
+      "Custom option: anchor"
+    ],
+    "animations_old\\conditions\\wounded.json": [
+      "Custom option: remove"
+    ],
+    "animations_old\\feats\\trap-finder.json": [
+      "Custom option: remove",
+      "Custom option: filter",
+      "Custom option: mask",
+      "Custom option: rotate",
+      "Custom option: duration"
+    ],
+    "animations_old\\spells\\1st\\breathe-fire.json": [
+      "Deeply nested contents (>2 levels)"
+    ],
+    "animations_old\\spells\\1st\\cornucopia.json": [
+      "Custom option: duration"
+    ],
+    "animations_old\\spells\\1st\\haunting-hymn.json": [
+      "Custom option: repeats",
+      "Custom option: mask",
+      "Custom option: randomizeMirrorY"
+    ],
+    "animations_old\\spells\\1st\\ignition.json": [
+      "Deeply nested contents (>2 levels)"
+    ],
+    "animations_old\\spells\\1st\\kinetic-ram.json": [
+      "Custom option: anchor"
+    ],
+    "animations_old\\spells\\1st\\lose-the-path.json": [
+      "Custom option: duration"
+    ],
+    "animations_old\\spells\\1st\\needle-darts.json": [
+      "Deeply nested contents (>2 levels)",
+      "Custom option: repeats"
+    ],
+    "animations_old\\spells\\1st\\warp-step.json": [
+      "Custom option: tint",
+      "Custom option: filter",
+      "Custom option: mask",
+      "Custom option: rotate",
+      "Custom option: duration"
+    ],
+    "animations_old\\spells\\2nd\\false-vitality.json": [
+      "Custom option: filter"
+    ],
+    "animations_old\\spells\\2nd\\grease.json": [
+      "Custom option: duration"
+    ],
+    "animations_old\\spells\\3rd\\sand-form.json": [
+      "Custom option: mask",
+      "Custom option: rotate",
+      "Custom option: filter"
+    ],
+    "animations_old\\spells\\3rd\\slow.json": [
+      "Custom option: missed",
+      "Custom option: filter"
+    ],
+    "animations_old\\spells\\5th\\entwined-roots.json": [
+      "Custom option: mask"
+    ],
+    "animations_old\\spells\\5th\\flames-of-ego.json": [
+      "Custom option: mask"
+    ],
+    "animations_old\\spells\\5th\\flammable-fumes.json": [
+      "Custom option: rotate"
+    ],
+    "animations_old\\spells\\5th\\howling-blizzard.json": [
+      "Deeply nested contents (>2 levels)"
+    ],
+    "animations_old\\spells\\6th\\disintegrate.json": [
+      "Custom option: filter"
+    ],
+    "animations_old\\spells\\6th\\flame-vortex.json": [
+      "Deeply nested contents (>2 levels)"
+    ],
+    "animations_old\\spells\\7th\\fiery-body.json": [
+      "Custom option: mask"
+    ]
+  }
+}

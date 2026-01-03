@@ -1,0 +1,23 @@
+{
+	"origin:item:slug:grim-tendrils": [
+		{
+			"triggers": [
+				"place-template"
+			],
+			"execute": {
+				"type": "graphic",
+				"graphic": [
+					"jb2a.energy_strands.range.multiple.purple.01"
+				],
+				"position": {
+					"type": "dynamic",
+					"location": "TEMPLATES"
+				},
+				"size": {
+					"type": "directed",
+					"endpoint": "TEMPLATES"
+				}
+			}
+		}
+	]
+}

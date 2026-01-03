@@ -1,0 +1,63 @@
+{
+	"effect:evolution-surge": [
+		{
+			"triggers": [
+				"effect"
+			],
+			"predicates": [
+				{
+					"gte": [
+						"settings:quality",
+						1
+					]
+				}
+			],
+			"execute": {
+				"type": "graphic",
+				"graphic": [
+					"jb2a.aura_themed.01.outward.complete.cold.01"
+				],
+				"position": {
+					"type": "dynamic",
+					"location": "SOURCES"
+				},
+				"size": {
+					"type": "relative",
+					"relativeTo": "SOURCES",
+					"scaling": 1.5
+				},
+				"fadeIn": {
+					"duration": 500
+				},
+				"fadeOut": {
+					"duration": 500
+				},
+				"tieToDocuments": true
+			},
+			"contents": [
+				{
+					"triggers": [
+						"start-turn",
+						"effect"
+					],
+					"predicates": [
+						{
+							"lte": [
+								"settings:quality",
+								2
+							]
+						}
+					]
+				},
+				{
+					"triggers": [
+						"effect"
+					],
+					"predicates": [
+						"settings:persistent"
+					]
+				}
+			]
+		}
+	]
+}

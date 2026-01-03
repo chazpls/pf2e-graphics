@@ -1,0 +1,24 @@
+{
+	"item:slug:combustion": [
+		{
+			"triggers": [
+				"damage-roll"
+			],
+			"execute": {
+				"type": "graphic",
+				"graphic": [
+					"jb2a.flames.orange.03.2x2"
+				],
+				"position": {
+					"type": "dynamic",
+					"location": "TARGETS"
+				},
+				"size": {
+					"type": "relative",
+					"relativeTo": "SOURCES",
+					"scaling": 1.8
+				}
+			}
+		}
+	]
+}

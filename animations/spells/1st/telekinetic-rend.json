@@ -1,0 +1,102 @@
+{
+	"origin:item:slug:telekinetic-rend": [
+		{
+			"triggers": [
+				"place-template"
+			],
+			"execute": {
+				"type": "graphic",
+				"graphic": [
+					"jb2a.burning_hands.01.orange"
+				],
+				"position": {
+					"type": "dynamic",
+					"location": "TEMPLATES"
+				},
+				"size": {
+					"type": "directed",
+					"endpoint": "TEMPLATES"
+				}
+			},
+			"contents": [
+				{
+					"predicates": [
+						{
+							"or": [
+								"origin:item:damage:bludgeoning",
+								{
+									"and": [
+										"origin:item:tag:amped",
+										{
+											"gte": [
+												"settings:quality",
+												2
+											]
+										}
+									]
+								}
+							]
+						}
+					],
+					"execute": {
+						"type": "graphic",
+						"graphic": [
+							"jb2a.falling_rocks.top.1x1.grey"
+						],
+						"position": {
+							"type": "dynamic",
+							"location": "SOURCES"
+						},
+						"size": {
+							"type": "relative",
+							"relativeTo": "SOURCES",
+							"scaling": 2
+						}
+					}
+				},
+				{
+					"predicates": [
+						{
+							"or": [
+								"origin:item:damage:slashing",
+								{
+									"and": [
+										"origin:item:tag:amped",
+										{
+											"gte": [
+												"settings:quality",
+												2
+											]
+										}
+									]
+								}
+							]
+						}
+					],
+					"execute": {
+						"type": "graphic",
+						"graphic": [
+							"jb2a.whirlwind.bluegrey"
+						],
+						"position": {
+							"type": "dynamic",
+							"location": "SOURCES"
+						},
+						"size": {
+							"type": "relative",
+							"relativeTo": "SOURCES",
+							"scaling": 1.5
+						},
+						"fadeIn": {
+							"duration": 250
+						},
+						"fadeOut": {
+							"duration": 1000
+						},
+						"duration": 5000
+					}
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,30 @@
+{
+	"item:slug:synesthesia": [
+		{
+			"triggers": [
+				"saving-throw"
+			],
+			"execute": {
+				"type": "graphic",
+				"graphic": [
+					"jb2a.particles.swirl.greenyellow.01.01"
+				],
+				"position": {
+					"type": "dynamic",
+					"location": "TARGETS"
+				},
+				"size": {
+					"type": "relative",
+					"relativeTo": "SOURCES",
+					"scaling": 2
+				},
+				"fadeIn": {
+					"duration": 250
+				},
+				"fadeOut": {
+					"duration": 500
+				}
+			}
+		}
+	]
+}

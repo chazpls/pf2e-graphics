@@ -1,0 +1,95 @@
+{
+	"effect:fire-shield": [
+		{
+			"triggers": [
+				"toggle"
+			],
+			"predicates": [
+				"toggle:create",
+				{
+					"gte": [
+						"settings:quality",
+						1
+					]
+				}
+			],
+			"execute": {
+				"type": "graphic",
+				"graphic": [
+					"jb2a.shield.01.complete.01"
+				],
+				"position": {
+					"type": "dynamic",
+					"location": "SOURCES"
+				},
+				"size": {
+					"type": "relative",
+					"relativeTo": "SOURCES",
+					"scaling": 1.5
+				}
+			},
+			"contents": [
+				{
+					"predicates": [
+						{
+							"not": "conservation-of-energy:cold"
+						}
+					],
+					"execute": {
+						"type": "graphic",
+						"graphic": [
+							"jb2a.shield_themed.below.fire.01.orange"
+						],
+						"position": {
+							"type": "dynamic",
+							"location": "SOURCES"
+						},
+						"size": {
+							"type": "relative",
+							"relativeTo": "SOURCES"
+						}
+					},
+					"contents": [
+						{
+							"predicates": [
+								"settings:persistent"
+							]
+						},
+						{
+							"default": true
+						}
+					]
+				},
+				{
+					"predicates": [
+						"conservation-of-energy:cold"
+					],
+					"execute": {
+						"type": "graphic",
+						"graphic": [
+							"jb2a.shield_themed.below.ice.01.blue"
+						],
+						"position": {
+							"type": "dynamic",
+							"location": "SOURCES"
+						},
+						"size": {
+							"type": "relative",
+							"relativeTo": "SOURCES"
+						}
+					},
+					"contents": [
+						{
+							"predicates": [
+								"settings:persistent"
+							]
+						},
+						{
+							"default": true
+						}
+					]
+				}
+			]
+		}
+	]
+}

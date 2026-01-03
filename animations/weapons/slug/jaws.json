@@ -1,0 +1,25 @@
+{
+	"item:slug:jaw": "item:slug:jaws",
+	"item:slug:jaws": [
+		{
+			"triggers": [
+				"attack-roll"
+			],
+			"execute": {
+				"type": "graphic",
+				"graphic": [
+					"jb2a.bite.400px.red"
+				],
+				"position": {
+					"type": "dynamic",
+					"location": "TARGETS"
+				},
+				"size": {
+					"type": "relative",
+					"relativeTo": "SOURCES",
+					"scaling": 2
+				}
+			}
+		}
+	]
+}

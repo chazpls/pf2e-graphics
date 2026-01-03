@@ -1,0 +1,45 @@
+{
+	"origin:item:slug:chilling-spray": [
+		{
+			"triggers": [
+				"place-template"
+			],
+			"execute": {
+				"type": "graphic",
+				"graphic": [
+					"jb2a.cone_of_cold.blue"
+				],
+				"position": {
+					"type": "dynamic",
+					"location": "TEMPLATES"
+				},
+				"size": {
+					"type": "directed",
+					"endpoint": "TEMPLATES"
+				}
+			},
+			"contents": [
+				{
+					"predicates": [
+						{
+							"gte": [
+								"settings:quality",
+								1
+							]
+						}
+					]
+				},
+				{
+					"predicates": [
+						{
+							"gte": [
+								"settings:quality",
+								2
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,33 @@
+{
+	"effect:sure-strike": [
+		{
+			"triggers": [
+				"effect"
+			],
+			"execute": {
+				"type": "graphic",
+				"graphic": [
+					"jb2a.glint.yellow.few.2"
+				],
+				"position": {
+					"type": "dynamic",
+					"location": "SOURCES"
+				},
+				"size": {
+					"type": "relative",
+					"relativeTo": "SOURCES"
+				}
+			},
+			"contents": [
+				{
+					"default": true
+				},
+				{
+					"predicates": [
+						"settings:persistent"
+					]
+				}
+			]
+		}
+	]
+}

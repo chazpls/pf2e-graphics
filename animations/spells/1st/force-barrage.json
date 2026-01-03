@@ -1,0 +1,23 @@
+{
+	"item:slug:force-barrage": [
+		{
+			"triggers": [
+				"damage-roll"
+			],
+			"execute": {
+				"type": "graphic",
+				"graphic": [
+					"jb2a.magic_missile.purple"
+				],
+				"position": {
+					"type": "static",
+					"location": "SOURCES"
+				},
+				"size": {
+					"type": "directed",
+					"endpoint": "TARGETS"
+				}
+			}
+		}
+	]
+}

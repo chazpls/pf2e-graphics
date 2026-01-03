@@ -1,0 +1,41 @@
+{
+	"origin:item:slug:toxic-cloud": [
+		{
+			"triggers": [
+				"place-template"
+			],
+			"execute": {
+				"type": "graphic",
+				"graphic": [
+					"jb2a.darkness.green"
+				],
+				"position": {
+					"type": "dynamic",
+					"location": "TEMPLATES"
+				},
+				"size": {
+					"type": "relative",
+					"relativeTo": "SOURCES",
+					"scaling": 1.1
+				}
+			},
+			"contents": [
+				{
+					"predicates": [
+						{
+							"gte": [
+								"settings:quality",
+								1
+							]
+						}
+					]
+				},
+				{
+					"predicates": [
+						"settings:persistent"
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,66 @@
+{
+	"item:slug:heat-metal": [
+		{
+			"triggers": [
+				"damage-roll"
+			],
+			"execute": {
+				"type": "graphic",
+				"graphic": [
+					"jb2a.shield.01.complete.01"
+				],
+				"position": {
+					"type": "dynamic",
+					"location": "TARGETS"
+				},
+				"size": {
+					"type": "relative",
+					"relativeTo": "SOURCES",
+					"scaling": 2
+				}
+			},
+			"contents": [
+				{
+					"predicates": [
+						{
+							"not": "conservation-of-energy:cold"
+						}
+					],
+					"execute": {
+						"type": "graphic",
+						"graphic": [
+							"jb2a.flames.orange.03.2x2"
+						],
+						"position": {
+							"type": "dynamic",
+							"location": "SOURCES"
+						},
+						"size": {
+							"type": "relative",
+							"relativeTo": "SOURCES"
+						}
+					}
+				},
+				{
+					"predicates": [
+						"conservation-of-energy:cold"
+					],
+					"execute": {
+						"type": "graphic",
+						"graphic": [
+							"jb2a.ice_spikes.radial.burst.white"
+						],
+						"position": {
+							"type": "dynamic",
+							"location": "SOURCES"
+						},
+						"size": {
+							"type": "relative",
+							"relativeTo": "SOURCES"
+						}
+					}
+				}
+			]
+		}
+	]
+}

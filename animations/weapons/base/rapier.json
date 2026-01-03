@@ -1,0 +1,40 @@
+{
+	"item:base:rapier": [
+		{
+			"triggers": [
+				"attack-roll"
+			],
+			"predicates": [
+				"melee"
+			],
+			"overrides": [
+				"item:group"
+			],
+			"execute": {
+				"type": "graphic",
+				"graphic": [
+					"jb2a.rapier.melee.01.white"
+				],
+				"position": {
+					"type": "static",
+					"location": "SOURCES",
+					"anchor": {
+						"x": 0.4
+					}
+				},
+				"reflection": {
+					"y": "random"
+				},
+				"size": {
+					"type": "relative",
+					"relativeTo": "SOURCES",
+					"scaling": 5
+				},
+				"rotation": {
+					"type": "relative",
+					"location": "TARGETS"
+				}
+			}
+		}
+	]
+}

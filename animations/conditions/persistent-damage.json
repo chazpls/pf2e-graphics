@@ -1,0 +1,559 @@
+{
+	"item:slug:persistent-damage": [
+		{
+			"triggers": [
+				"damage-taken",
+				"toggle"
+			],
+			"execute": {
+				"type": "graphic",
+				"graphic": [
+					"jb2a.shield.01.complete.01"
+				],
+				"position": {
+					"type": "dynamic",
+					"location": "SOURCES"
+				},
+				"size": {
+					"type": "relative",
+					"relativeTo": "SOURCES",
+					"scaling": 1.5
+				}
+			},
+			"contents": [
+				{
+					"predicates": [
+						"item:damage:type:acid"
+					],
+					"contents": [
+						{
+							"predicates": [
+								"jb2a:patreon"
+							],
+							"execute": {
+								"type": "graphic",
+								"graphic": [
+									"jb2a.liquid.splash.green"
+								],
+								"position": {
+									"type": "dynamic",
+									"location": "SOURCES"
+								},
+								"size": {
+									"type": "relative",
+									"relativeTo": "SOURCES"
+								}
+							}
+						},
+						{
+							"predicates": [
+								"jb2a:free"
+							],
+							"execute": {
+								"type": "graphic",
+								"graphic": [
+									"jb2a.liquid.splash.blue"
+								],
+								"position": {
+									"type": "dynamic",
+									"location": "SOURCES"
+								},
+								"size": {
+									"type": "relative",
+									"relativeTo": "SOURCES"
+								},
+								"filters": [
+									{
+										"type": "ColorMatrix",
+										"options": {
+											"hue": -100
+										}
+									}
+								]
+							}
+						}
+					]
+				},
+				{
+					"predicates": [
+						"item:damage:type:bleed"
+					],
+					"contents": [
+						{
+							"predicates": [
+								"jb2a:patreon"
+							],
+							"execute": {
+								"type": "graphic",
+								"graphic": [
+									"jb2a.liquid.splash.red"
+								],
+								"position": {
+									"type": "dynamic",
+									"location": "SOURCES"
+								},
+								"size": {
+									"type": "relative",
+									"relativeTo": "SOURCES"
+								}
+							}
+						},
+						{
+							"predicates": [
+								"jb2a:free"
+							],
+							"execute": {
+								"type": "graphic",
+								"graphic": [
+									"jb2a.liquid.splash.blue"
+								],
+								"position": {
+									"type": "dynamic",
+									"location": "SOURCES"
+								},
+								"size": {
+									"type": "relative",
+									"relativeTo": "SOURCES"
+								},
+								"filters": [
+									{
+										"type": "ColorMatrix",
+										"options": {
+											"hue": 145
+										}
+									}
+								]
+							}
+						}
+					]
+				},
+				{
+					"predicates": [
+						"item:damage:type:bludgeoning"
+					],
+					"execute": {
+						"type": "graphic",
+						"graphic": [
+							"jb2a.impact.ground_crack.orange.01"
+						],
+						"position": {
+							"type": "dynamic",
+							"location": "SOURCES"
+						},
+						"size": {
+							"type": "relative",
+							"relativeTo": "SOURCES"
+						}
+					}
+				},
+				{
+					"predicates": [
+						"item:damage:type:cold"
+					],
+					"execute": {
+						"type": "graphic",
+						"graphic": [
+							"jb2a.impact_themed.ice_shard.blue"
+						],
+						"position": {
+							"type": "dynamic",
+							"location": "SOURCES"
+						},
+						"size": {
+							"type": "relative",
+							"relativeTo": "SOURCES"
+						}
+					}
+				},
+				{
+					"predicates": [
+						"item:damage:type:electricity"
+					],
+					"execute": {
+						"type": "graphic",
+						"graphic": [
+							"jb2a.impact.012.blue"
+						],
+						"position": {
+							"type": "dynamic",
+							"location": "SOURCES"
+						},
+						"size": {
+							"type": "relative",
+							"relativeTo": "SOURCES"
+						}
+					}
+				},
+				{
+					"predicates": [
+						"item:damage:type:fire"
+					],
+					"execute": {
+						"type": "graphic",
+						"graphic": [
+							"jb2a.shield_themed.below.fire.01.orange"
+						],
+						"position": {
+							"type": "dynamic",
+							"location": "SOURCES"
+						},
+						"size": {
+							"type": "relative",
+							"relativeTo": "SOURCES"
+						},
+						"fadeIn": {
+							"duration": 500
+						},
+						"fadeOut": {
+							"duration": 250
+						},
+						"duration": 2400
+					}
+				},
+				{
+					"predicates": [
+						"item:damage:type:force"
+					],
+					"execute": {
+						"type": "graphic",
+						"graphic": [
+							"jb2a.cast_shape.circle.single01.blue"
+						],
+						"position": {
+							"type": "dynamic",
+							"location": "SOURCES"
+						},
+						"size": {
+							"type": "relative",
+							"relativeTo": "SOURCES"
+						}
+					}
+				},
+				{
+					"predicates": [
+						"item:damage:type:mental"
+					],
+					"execute": {
+						"type": "graphic",
+						"graphic": [
+							"jb2a.template_circle.out_pulse.02.burst.bluewhite"
+						],
+						"position": {
+							"type": "dynamic",
+							"location": "SOURCES"
+						},
+						"size": {
+							"type": "relative",
+							"relativeTo": "SOURCES"
+						},
+						"filters": [
+							{
+								"type": "ColorMatrix",
+								"options": {
+									"saturate": 0.8,
+									"hue": 20
+								}
+							}
+						]
+					}
+				},
+				{
+					"predicates": [
+						"item:damage:type:piercing"
+					],
+					"contents": [
+						{
+							"predicates": [
+								"jb2a:patreon"
+							],
+							"execute": {
+								"type": "graphic",
+								"graphic": [
+									"jb2a.spike_trap.10x10ft.top.no_base.normal.01"
+								],
+								"position": {
+									"type": "dynamic",
+									"location": "SOURCES"
+								},
+								"size": {
+									"type": "relative",
+									"relativeTo": "SOURCES"
+								}
+							}
+						},
+						{
+							"predicates": [
+								"jb2a:free"
+							],
+							"execute": {
+								"type": "graphic",
+								"graphic": [
+									"jb2a.spike_trap.10x10ft.top.holes.normal.01.01"
+								],
+								"position": {
+									"type": "dynamic",
+									"location": "SOURCES"
+								},
+								"size": {
+									"type": "relative",
+									"relativeTo": "SOURCES"
+								}
+							}
+						}
+					]
+				},
+				{
+					"predicates": [
+						"item:damage:type:poison"
+					],
+					"contents": [
+						{
+							"predicates": [
+								"jb2a:patreon"
+							],
+							"execute": {
+								"type": "graphic",
+								"graphic": [
+									"jb2a.sleep.cloud.02.green"
+								],
+								"position": {
+									"type": "dynamic",
+									"location": "SOURCES"
+								},
+								"size": {
+									"type": "relative",
+									"relativeTo": "SOURCES"
+								}
+							}
+						},
+						{
+							"predicates": [
+								"jb2a:free"
+							],
+							"execute": {
+								"type": "graphic",
+								"graphic": [
+									"jb2a.sleep.cloud.02.pink"
+								],
+								"position": {
+									"type": "dynamic",
+									"location": "SOURCES"
+								},
+								"size": {
+									"type": "relative",
+									"relativeTo": "SOURCES"
+								},
+								"filters": [
+									{
+										"type": "ColorMatrix",
+										"options": {
+											"hue": 180
+										}
+									}
+								]
+							}
+						}
+					]
+				},
+				{
+					"predicates": [
+						"item:damage:type:slashing"
+					],
+					"contents": [
+						{
+							"predicates": [
+								"jb2a:patreon"
+							],
+							"execute": {
+								"type": "graphic",
+								"graphic": [
+									"jb2a.claws.400px.bright_orange"
+								],
+								"position": {
+									"type": "dynamic",
+									"location": "SOURCES"
+								},
+								"size": {
+									"type": "relative",
+									"relativeTo": "SOURCES"
+								}
+							}
+						},
+						{
+							"predicates": [
+								"jb2a:free"
+							],
+							"execute": {
+								"type": "graphic",
+								"graphic": [
+									"jb2a.claws.400px.red"
+								],
+								"position": {
+									"type": "dynamic",
+									"location": "SOURCES"
+								},
+								"size": {
+									"type": "relative",
+									"relativeTo": "SOURCES"
+								}
+							}
+						}
+					]
+				},
+				{
+					"predicates": [
+						"item:damage:type:sonic"
+					],
+					"execute": {
+						"type": "graphic",
+						"graphic": [
+							"jb2a.soundwave.02.blue"
+						],
+						"position": {
+							"type": "dynamic",
+							"location": "SOURCES"
+						},
+						"size": {
+							"type": "relative",
+							"relativeTo": "SOURCES"
+						},
+						"delay": 800,
+						"filters": [
+							{
+								"type": "ColorMatrix",
+								"options": {
+									"hue": -50
+								}
+							}
+						]
+					}
+				},
+				{
+					"predicates": [
+						"item:damage:type:spirit"
+					],
+					"contents": [
+						{
+							"predicates": [
+								"jb2a:patreon"
+							],
+							"execute": {
+								"type": "graphic",
+								"graphic": [
+									"jb2a.spirit_guardians.blue.no_ring"
+								],
+								"position": {
+									"type": "dynamic",
+									"location": "SOURCES"
+								},
+								"size": {
+									"type": "relative",
+									"relativeTo": "SOURCES"
+								}
+							}
+						},
+						{
+							"predicates": [
+								"jb2a:free"
+							],
+							"execute": {
+								"type": "graphic",
+								"graphic": [
+									"jb2a.spirit_guardians.blueyellow.ring"
+								],
+								"position": {
+									"type": "dynamic",
+									"location": "SOURCES"
+								},
+								"size": {
+									"type": "relative",
+									"relativeTo": "SOURCES"
+								},
+								"filters": [
+									{
+										"type": "ColorMatrix",
+										"options": {
+											"hue": 155
+										}
+									}
+								]
+							}
+						}
+					]
+				},
+				{
+					"predicates": [
+						"item:damage:type:vitality"
+					],
+					"execute": {
+						"type": "graphic",
+						"graphic": [
+							"jb2a.divine_smite.caster.reversed.blueyellow"
+						],
+						"position": {
+							"type": "dynamic",
+							"location": "SOURCES"
+						},
+						"size": {
+							"type": "relative",
+							"relativeTo": "SOURCES"
+						}
+					}
+				},
+				{
+					"predicates": [
+						"item:damage:type:void"
+					],
+					"contents": [
+						{
+							"predicates": [
+								"jb2a:patreon"
+							],
+							"execute": {
+								"type": "graphic",
+								"graphic": [
+									"jb2a.divine_smite.caster.reversed.dark_purple"
+								],
+								"position": {
+									"type": "dynamic",
+									"location": "SOURCES"
+								},
+								"size": {
+									"type": "relative",
+									"relativeTo": "SOURCES"
+								}
+							}
+						},
+						{
+							"predicates": [
+								"jb2a:free"
+							],
+							"execute": {
+								"type": "graphic",
+								"graphic": [
+									"jb2a.divine_smite.caster.reversed.blueyellow"
+								],
+								"position": {
+									"type": "dynamic",
+									"location": "SOURCES"
+								},
+								"size": {
+									"type": "relative",
+									"relativeTo": "SOURCES"
+								},
+								"filters": [
+									{
+										"type": "ColorMatrix",
+										"options": {
+											"hue": -165
+										}
+									}
+								]
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

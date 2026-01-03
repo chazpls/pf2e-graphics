@@ -1,0 +1,26 @@
+{
+	"item:slug:enfeeble": [
+		{
+			"triggers": [
+				"saving-throw"
+			],
+			"predicates": [
+				"jb2a:patreon"
+			],
+			"execute": {
+				"type": "graphic",
+				"graphic": [
+					"jb2a.eldritch_blast.dark_red"
+				],
+				"position": {
+					"type": "static",
+					"location": "SOURCES"
+				},
+				"size": {
+					"type": "directed",
+					"endpoint": "TARGETS"
+				}
+			}
+		}
+	]
+}
