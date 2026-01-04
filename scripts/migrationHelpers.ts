@@ -85,3 +85,4 @@ export function buildRollOptionMap(files: AnimationFileData[]): Map<string, Set<
 	return map;
 }
 
+

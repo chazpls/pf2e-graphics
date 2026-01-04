@@ -176,13 +176,19 @@ const pf2etoolbeltRollSave = Hooks.on('pf2e-toolbelt.rollSave', (args: RollSaveH
 	const outcome = rollMessage.flags.pf2e.context?.outcome;
 	if (outcome) newOptions.push(`check:outcome:${game.pf2e.system.sluggify(outcome)}`);
 
+	// If there is an origin, get the actors token (the caster).
+	// Otherwise fall back to rollMessage.token (though this may be incorrect for saving throws).
+	const sources = rollMessage.flags.pf2e.origin?.actor
+		? (fromUuidSync(rollMessage.flags.pf2e.origin?.actor) as ActorPF2e).getActiveTokens()
+		: [rollMessage.token!];
+
 	window.pf2eGraphics.AnimCore.animate(
 		{
 			rollOptions: rollOptions.concat(newOptions),
 			trigger: 'saving-throw' as const,
 			context: args,
 			targets: [target],
-			sources: [rollMessage.token!],
+			sources,
 			item: rollMessage.item,
 			actor: target.actor,
 			triggerContext: { outcome: outcome ?? success },

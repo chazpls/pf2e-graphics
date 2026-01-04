@@ -2,8 +2,7 @@
 	"item:slug:phase-bolt": [
 		{
 			"triggers": [
-				"attack-roll",
-				"action"
+				"attack-roll"
 			],
 			"execute": {
 				"type": "graphic",
@@ -30,12 +29,12 @@
 							"jb2a.bolt.physical.orange"
 						],
 						"position": {
-							"type": "dynamic",
+							"type": "static",
 							"location": "SOURCES"
 						},
 						"size": {
-							"type": "relative",
-							"relativeTo": "SOURCES"
+							"type": "directed",
+							"endpoint": "TARGETS"
 						},
 						"filters": [
 							{
@@ -57,12 +56,12 @@
 							"jb2a.bolt.physical.purple"
 						],
 						"position": {
-							"type": "dynamic",
+							"type": "static",
 							"location": "SOURCES"
 						},
 						"size": {
-							"type": "relative",
-							"relativeTo": "SOURCES"
+							"type": "directed",
+							"endpoint": "TARGETS"
 						}
 					}
 				}

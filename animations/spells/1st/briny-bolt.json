@@ -2,8 +2,7 @@
 	"item:slug:briny-bolt": [
 		{
 			"triggers": [
-				"attack-roll",
-				"action"
+				"attack-roll"
 			],
 			"execute": {
 				"type": "graphic",
@@ -21,6 +20,16 @@
 			},
 			"contents": [
 				{
+					"label": "SFX Water Splash",
+					"execute": {
+						"type": "sound",
+						"sound": [
+							"graphics-sfx.magic.water.impact.splash.01.01"
+						],
+						"delay": 500
+					}
+				},
+				{
 					"predicates": [
 						"jb2a:free"
 					],
@@ -30,12 +39,12 @@
 							"jb2a.ranged.04.projectile.01.green"
 						],
 						"position": {
-							"type": "dynamic",
+							"type": "static",
 							"location": "SOURCES"
 						},
 						"size": {
-							"type": "relative",
-							"relativeTo": "SOURCES"
+							"type": "directed",
+							"endpoint": "TARGETS"
 						},
 						"filters": [
 							{
@@ -57,12 +66,12 @@
 							"jb2a.ranged.04.projectile.01.blue"
 						],
 						"position": {
-							"type": "dynamic",
+							"type": "static",
 							"location": "SOURCES"
 						},
 						"size": {
-							"type": "relative",
-							"relativeTo": "SOURCES"
+							"type": "directed",
+							"endpoint": "TARGETS"
 						}
 					}
 				}

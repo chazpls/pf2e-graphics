@@ -2,7 +2,7 @@
 	"item:slug:electric-arc": [
 		{
 			"triggers": [
-				"damage-roll"
+				"saving-throw"
 			],
 			"contents": [
 				{
