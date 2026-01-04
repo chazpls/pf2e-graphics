@@ -48,7 +48,19 @@ function handleChatMessage(message: ChatMessagePF2e, delayed = false) {
 		? [message.target?.token]
 		: Array.from((message.author as UserPF2e).targets);
 
-	const targets = toolbeltTargets ?? (messageTargets.length ? messageTargets : []);
+	// For damage-taken trigger with toolbelt, use message.token (the token receiving damage/healing)
+	// when available, as toolbelt applies damage individually per token
+	let targets: (TokenDocumentPF2e | null)[] = [];
+	if (trigger === 'damage-taken' && message.token) {
+		// When damage is applied individually, message.token is the specific token receiving it
+		targets = [message.token];
+	} else if (trigger === 'damage-taken' && message.target?.token) {
+		// Fallback to message.target.token if available
+		targets = [message.target.token];
+	} else {
+		// Default behavior for other triggers
+		targets = toolbeltTargets ?? (messageTargets.length ? messageTargets : []);
+	}
 
 	// If there is an origin, get the actors token.
 	// Otherwise just ~~kill~~ use the messenger.
