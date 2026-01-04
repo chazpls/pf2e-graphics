@@ -7,7 +7,7 @@
 			"execute": {
 				"type": "graphic",
 				"graphic": [
-					"jb2a.template_line_piercing.water.01.blue"
+					"jb2a.arrow"
 				],
 				"position": {
 					"type": "static",
@@ -17,7 +17,57 @@
 					"type": "directed",
 					"endpoint": "TARGETS"
 				}
-			}
+			},
+			"contents": [
+				{
+					"label": "SFX Water Splash",
+					"execute": {
+						"type": "sound",
+						"sound": [
+							"graphics-sfx.magic.water.impact.splash.01.01"
+						],
+						"delay": 500
+					}
+				},
+				{
+					"predicates": [
+						"jb2a:free"
+					],
+					"execute": {
+						"type": "graphic",
+						"graphic": [
+							"jb2a.template_line_piercing.water.01.blue"
+						],
+						"position": {
+							"type": "static",
+							"location": "SOURCES"
+						},
+						"size": {
+							"type": "directed",
+							"endpoint": "TARGETS"
+						}
+					}
+				},
+				{
+					"predicates": [
+						"jb2a:patreon"
+					],
+					"execute": {
+						"type": "graphic",
+						"graphic": [
+							"jb2a.template_line_piercing.water.01.blue"
+						],
+						"position": {
+							"type": "static",
+							"location": "SOURCES"
+						},
+						"size": {
+							"type": "directed",
+							"endpoint": "TARGETS"
+						}
+					}
+				}
+			]
 		}
 	]
 }
