@@ -1,0 +1,79 @@
+{
+	"spell:slug:garden-of-healing": [
+		{
+			"triggers": [
+				"action"
+			],
+			"execute": {
+				"type": "graphic",
+				"graphic": [
+					"jb2a.plant_growth.04.round.2x2.complete.greenwhite"
+				],
+				"position": {
+					"type": "dynamic",
+					"location": "SOURCES"
+				},
+				"size": {
+					"type": "absolute",
+					"width": 5,
+					"height": 5,
+					"gridUnits": true
+				},
+				"elevation": {
+					"sortLayer": "belowTokens"
+				}
+			}
+		}
+	],
+	"item:slug:garden-of-healing": [
+		{
+			"triggers": [
+				"damage-taken"
+			],
+			"predicates": [
+				{
+					"gte": [
+						"settings:quality",
+						1
+					]
+				},
+				"jb2a:patreon"
+			],
+			"execute": {
+				"type": "graphic",
+				"graphic": [
+					"jb2a.bullet.01.green"
+				],
+				"position": {
+					"type": "static",
+					"location": "SOURCES"
+				},
+				"size": {
+					"type": "directed",
+					"endpoint": "TARGETS"
+				}
+			}
+		},
+		{
+			"triggers": [
+				"damage-taken"
+			],
+			"execute": {
+				"type": "graphic",
+				"graphic": [
+					"jb2a.healing_generic.400px.green"
+				],
+				"position": {
+					"type": "dynamic",
+					"location": "TARGETS"
+				},
+				"size": {
+					"type": "relative",
+					"relativeTo": "SOURCES",
+					"scaling": 1.5
+				},
+				"delay": 300
+			}
+		}
+	]
+}

@@ -1,0 +1,23 @@
+{
+	"item:slug:hydraulic-push": [
+		{
+			"triggers": [
+				"attack-roll"
+			],
+			"execute": {
+				"type": "graphic",
+				"graphic": [
+					"jb2a.template_line_piercing.water.01.blue"
+				],
+				"position": {
+					"type": "static",
+					"location": "SOURCES"
+				},
+				"size": {
+					"type": "directed",
+					"endpoint": "TARGETS"
+				}
+			}
+		}
+	]
+}

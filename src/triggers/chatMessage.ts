@@ -198,6 +198,46 @@ const pf2etoolbeltRollSave = Hooks.on('pf2e-toolbelt.rollSave', (args: RollSaveH
 	);
 });
 
+interface ApplyDamageHook {
+	message: ChatMessagePF2e;
+	target: TokenDocumentPF2e;
+}
+
+const pf2etoolbeltApplyDamage = Hooks.on('pf2e-toolbelt.applyDamage', (args: ApplyDamageHook) => {
+	const { message, target } = args;
+
+	const rollOptions: string[] = message.flags.pf2e.context?.options ?? [];
+	const newOptions: string[] = [];
+	const contextualRollOptions = (
+		message.flags.pf2e.context as { contextualRollOptions?: { postRoll?: string[] } } | undefined
+	)?.contextualRollOptions?.postRoll;
+	if (contextualRollOptions) {
+		newOptions.push(...contextualRollOptions);
+	}
+
+	if (message.item) {
+		newOptions.push(...(message.item.getRollOptions() ?? []));
+	}
+
+	const sources = message.flags.pf2e.origin?.actor
+		? (fromUuidSync(message.flags.pf2e.origin?.actor) as ActorPF2e).getActiveTokens()
+		: [message.token!];
+
+	window.pf2eGraphics.AnimCore.animate(
+		{
+			rollOptions: rollOptions.concat(newOptions),
+			trigger: 'damage-taken' as const,
+			context: args,
+			targets: [target],
+			sources,
+			item: message.item,
+			actor: target.actor,
+			user: message.author?.id,
+		},
+		'Target Helper Apply Damage',
+	);
+});
+
 /*
 interface RerollSaveHook {
 	oldRoll: Rolled<CheckRoll>;
@@ -246,6 +286,7 @@ if (import.meta.hot) {
 		Hooks.off('diceSoNiceMessageProcessed', diceSoNiceMessageProcessed);
 		Hooks.off('createChatMessage', createChatMessage);
 		Hooks.off('pf2e-toolbelt.rollSave', pf2etoolbeltRollSave);
+		Hooks.off('pf2e-toolbelt.applyDamage', pf2etoolbeltApplyDamage);
 		// Hooks.off('pf2e-toolbelt.rerollSave', pf2etoolbeltRerollSave);
 	});
 }
