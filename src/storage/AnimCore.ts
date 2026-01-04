@@ -333,8 +333,6 @@ export let AnimCore = class AnimCore {
 		animationData: JSONMap = this.animations,
 	): Record<string, ExecutableAnimation[]> {
 		devLog(`Search called with ${rollOptions.length} options and ${animationData.size} animation keys`);
-		devLog(`Looking for item:slug:fist in rollOptions:`, rollOptions.includes('item:slug:fist'));
-		devLog(`Animation data has item:slug:fist:`, animationData.has('item:slug:fist'));
 		
 		const unfoldedAnimationSets: [string, ReturnType<typeof unfoldAnimationSets>][] = [];
 

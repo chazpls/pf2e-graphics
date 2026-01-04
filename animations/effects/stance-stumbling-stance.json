@@ -1,0 +1,85 @@
+{
+	"effect:stumbling-stance": [
+		{
+			"triggers": [
+				"effect"
+			],
+			"contents": [
+				{
+					"label": "Stumbling Stance Token",
+					"execute": {
+						"type": "graphic",
+						"graphic": [
+							"SOURCES"
+						],
+						"position": {
+							"type": "dynamic",
+							"location": "SOURCES"
+						},
+						"size": {
+							"type": "relative",
+							"scaling": 1.5,
+							"uniform": true
+						},
+						"varyProperties": [
+							{
+								"type": "loop",
+								"object": "sprite",
+								"property": "rotation",
+								"values": [
+									0,
+									-4,
+									0,
+									6,
+									0
+								],
+								"duration": 1500
+							}
+						],
+						"tieToDocuments": true,
+						"persistent": "tokenPrototype"
+					}
+				},
+				{
+					"label": "Stumbling Stance Token Drunk",
+					"execute": {
+						"type": "graphic",
+						"graphic": [
+							"SOURCES"
+						],
+						"position": {
+							"type": "dynamic",
+							"location": "SOURCES"
+						},
+						"size": {
+							"type": "relative",
+							"scaling": 1.5,
+							"uniform": true
+						},
+						"visibility": {
+							"opacity": 0.35
+						},
+						"tint": "#8B4513",
+						"varyProperties": [
+							{
+								"type": "loop",
+								"object": "sprite",
+								"property": "rotation",
+								"values": [
+									0,
+									-4,
+									0,
+									6,
+									0
+								],
+								"duration": 1500
+							}
+						],
+						"tieToDocuments": true,
+						"persistent": "tokenPrototype"
+					}
+				}
+			]
+		}
+	]
+}
