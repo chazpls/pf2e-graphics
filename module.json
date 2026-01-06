@@ -81,10 +81,10 @@
 			"flags": {}
 		}
 	],
-	"url": "https://github.com/MrVauxs/pf2e-graphics",
-	"bugs": "https://github.com/MrVauxs/pf2e-graphics/issues",
-	"readme": "https://github.com/MrVauxs/pf2e-graphics/blob/main/README.md",
-	"changelog": "https://github.com/MrVauxs/pf2e-graphics/blob/main/CHANGELOG.md",
-	"manifest": "https://github.com/MrVauxs/pf2e-graphics/releases/latest/download/module.json",
-	"download": "https://github.com/MrVauxs/pf2e-graphics/releases/latest/download/module.zip"
+	"url": "https://github.com/chazpls/pf2e-graphics",
+	"bugs": "https://github.com/chazpls/pf2e-graphics/issues",
+	"readme": "https://github.com/chazpls/pf2e-graphics/blob/v13-stopgap-changes/README.md",
+	"changelog": "https://github.com/chazpls/pf2e-graphics/blob/v13-stopgap-changes/CHANGELOG.md",
+	"manifest": "https://github.com/chazpls/pf2e-graphics/releases/latest/download/module.json",
+	"download": "https://github.com/chazpls/pf2e-graphics/releases/latest/download/module.zip"
 }
