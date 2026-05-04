@@ -1,5 +1,5 @@
 {
-	"item:group:polearm": [
+	"animationSets": [
 		{
 			"label": "Polearm (Melee)",
 			"triggers": [
@@ -67,5 +67,10 @@
 				}
 			]
 		}
-	]
+	],
+	"rollOption": "item:group:polearm",
+	"source": "world",
+	"module": "pf2e-graphics",
+	"name": "Weapon: Group: Polearm",
+	"id": "wGK03e4UuGnfFTXQ"
 }
