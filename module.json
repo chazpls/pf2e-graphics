@@ -25,7 +25,7 @@
 	"compatibility": {
 		"minimum": "13.345",
 		"verified": "13.345",
-		"maximum": "13.999"
+		"maximum": "14.999"
 	},
 	"flags": {
 		"pf2e-graphics": {
