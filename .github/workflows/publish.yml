@@ -61,13 +61,6 @@ jobs:
       - name: Create zip
         run: zip -r9 ./module.zip module.json assets/ lang/ packs/ dist/ README.md LICENSE CHANGELOG.md
 
-      - name: Get changelog body
-        id: changelog
-        uses: release-flow/keep-a-changelog-action@v3
-        with:
-          command: query
-          version: ${{ steps.get-version.outputs.version-without-v }}
-
       - name: Update release with files
         id: create_version_release
         uses: ncipollo/release-action@v1
@@ -77,7 +70,6 @@ jobs:
           omitDraftDuringUpdate: true
           omitPrereleaseDuringUpdate: true
           name: ${{ steps.get-version.outputs.version-without-v }}
-          body: ${{ steps.changelog.outputs.release-notes }}
           artifacts: './module.json, ./module.zip'
 
       - name: Update prerelease repository
